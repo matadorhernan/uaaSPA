@@ -1,0 +1,22 @@
+header {
+  height: 70vh;
+  padding: 200px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(#005b9434, #005b94e8),
+    url(/assets/header.jpg);
+  background-attachment: fixed;
+
+  h1 {
+    color: white;
+    font-size: 5em;
+    span {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+
+}
