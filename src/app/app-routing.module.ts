@@ -4,11 +4,12 @@ import { RoboticsComponent } from './components/academics/cci/robotics/robotics.
 
 
 const routes: Routes = [
-  {path:'', component:RoboticsComponent}
+  {path:'**', redirectTo:'Oferta-Educativa/Licenciaturas/CCI/Robótica'},
+  {path:'Oferta-Educativa/Licenciaturas/CCI/Robótica', component:RoboticsComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

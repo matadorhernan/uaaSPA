@@ -10,6 +10,10 @@
   width: 100%;
   overflow-x: hidden;
 
+  .rotate {
+    transform: rotate(90deg);
+  }
+
   .navbar-brand {
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -188,6 +192,7 @@
       }
 
       .navbar-menu {
+        transition: .3s ease-in-out;
         height: 30px;
         width: 50px;
         border-radius: 5px;

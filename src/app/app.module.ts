@@ -11,6 +11,7 @@ import { RoboticsInfoComponent } from './components/academics/cci/robotics/robot
 import { RoboticsCardsComponent } from './components/academics/cci/robotics/robotics-cards/robotics-cards.component';
 import { RoboticsReadyComponent } from './components/academics/cci/robotics/robotics-ready/robotics-ready.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { SidenavModalComponent } from './components/shared/navbar/sidenav-modal/sidenav-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     RoboticsCardsComponent,
     RoboticsReadyComponent,
     FooterComponent,
+    SidenavModalComponent,
   ],
   imports: [
     BrowserModule,

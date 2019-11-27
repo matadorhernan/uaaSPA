@@ -1,3 +1,4 @@
+<app-sidenav-modal *ngIf="isSideNavActive"></app-sidenav-modal>
 <nav class="navbar sticky-top">
 
     <div class="navbar-brand">
@@ -83,8 +84,8 @@
                     search
                 </i>
             </button>
-            <button class="navbar-menu">
-                <i class="material-icons">
+            <button class="navbar-menu" (click)="activateSideNav()">
+                <i class="material-icons" [ngClass]="{'rotate': isSideNavActive}">
                     menu
                 </i>
             </button>
