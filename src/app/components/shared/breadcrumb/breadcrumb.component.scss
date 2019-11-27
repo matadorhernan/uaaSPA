@@ -2,10 +2,7 @@ nav {
     position: relative;
     .breadcrumb {
 
-        i {
-            color: #1086FF;
-        }
-
+        border-radius: 0;
         position: absolute;
         display: flex;
         justify-content: flex-start;
@@ -20,6 +17,9 @@ nav {
         font-size: .8em;
         background: #fafafaad;
 
+        i {
+            color: #1086FF;
+        }
         
     }
 }

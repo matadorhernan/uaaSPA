@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as M from 'materialize-css/dist/js/materialize';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,4 @@ import * as M from 'materialize-css/dist/js/materialize';
 })
 export class AppComponent {
   title = 'roboticsDemo';
-  constructor(){
-    
-  }
 }
