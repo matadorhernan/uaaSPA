@@ -9,8 +9,7 @@
       .menu-right {
         .menu-item {
           padding: 7px;
-          height: 30px;
-
+          height: 45px;
           span {
             font-size: 0.75em;
           }
@@ -36,7 +35,9 @@
 
 @media screen and (max-width: 1220px) {
   .navbar {
-    .navbar-quick .less-quick:nth-child(1) {
+    .navbar-quick .less-quick:nth-child(1),
+    .navbar-quick .less-quick:nth-child(2)
+     {
       display: none;
     }
   }

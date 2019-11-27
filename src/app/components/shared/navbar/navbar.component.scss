@@ -1,5 +1,4 @@
 .navbar {
-  
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 25px 50px;
@@ -72,12 +71,26 @@
     margin: 0;
 
     li {
-      cursor: pointer;
-
       padding: 0 10px;
-      font-size: 0.6em;
-      line-height: 25px;
-      color: white;
+      transition: .2s ease-in-out;
+      &:hover {
+        background: #de015a;
+        padding: 0 20px;
+      }
+      a {
+        color: white;
+        font-size: 0.6em;
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+
+    li.esiima {
+      background: black;
+      padding: 0 35px;
+      &:hover {
+        background: #1086FF;
+      }
     }
   }
 
@@ -95,12 +108,22 @@
 
     .menu-item {
       cursor: pointer;
+      position: relative;
+      transition: .3s ease-in-out;
 
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 15px;
-      height: 30px;
+
+      padding: 0 15px;
+      height: 45px;
+
+      &:hover:not(.store) {
+        background: #f7f7f7;
+        span {
+          color: #1086ff;
+        }
+      }
 
       i {
         color: #1086ff;
@@ -111,7 +134,9 @@
       }
 
       span {
+        transition: 0.3s ease-in-out;
         font-size: 0.8em;
+        font-weight: 500;
       }
     }
 
@@ -133,7 +158,6 @@
     }
 
     .menu-right {
-      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -146,8 +170,8 @@
         height: 20px;
       }
 
-      .navbar-search, .navbar-menu {
-        
+      .navbar-search,
+      .navbar-menu {
         height: 45px;
         width: 100px;
         background: transparent;
@@ -164,18 +188,16 @@
       }
 
       .navbar-menu {
-        
         height: 30px;
         width: 50px;
         border-radius: 5px;
         border: none;
         margin-right: 15px;
-        background: #1086FF;
+        background: #1086ff;
         font-size: 10px;
 
         i {
-          
-        color: white;
+          color: white;
         }
       }
     }

@@ -1,31 +1,55 @@
 footer {
-    position: relative;
-    background: #171715;
-    padding: 40px 0;
-    &::before {
-      content: "";
-      top: -50px;
-      position: absolute;
-      display: block;
-      background: url(/assets/tabNeg.svg) center / 200px no-repeat;
-      height: 70px;
-      width: 100%;
-    }
-
-    .squared {
-        height: 70px;
-        margin: 15px;
-    }
-
-    .long {
-        height: 160px;
-        margin: 15px;
-    }
-
-    .longer {
-        height: 200px;
-        margin: 15px;
-    }
-    
+  position: relative;
+  background: #171715;
+  padding: 40px 0;
+  &::before {
+    content: "";
+    top: -50px;
+    position: absolute;
+    display: block;
+    background: url(/assets/tabNeg.svg) center / 200px no-repeat;
+    height: 70px;
+    width: 100%;
   }
-  
+
+  .row div.wrapper {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    
+    .item-certificate {
+      
+      height: 70px;
+      width: 100px;
+      overflow-y: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 10px;
+
+      img {
+        height: 70px;
+        object-fit: contain;
+      }
+
+      &.long {
+        width: 150px;
+
+        img {
+          height: 160px;
+        }
+      }
+
+      &.longer {
+        width: 200px;
+        img {
+          height: 250px;
+        }
+      }
+    }
+  }
+}
