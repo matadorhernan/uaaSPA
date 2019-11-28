@@ -3,8 +3,13 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
-  background: #00000059;
+  .blur-back {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(2);
+  }
 }
 
 .navbar-modal {
@@ -16,13 +21,15 @@
   overflow-x: hidden !important;
 
   .menu-wrapper {
-    background: #ffffffcb;
+    min-height: 100vh;
     transition: 0.3s ease-in-out;
-
     transform: translateX(-300px);
     max-width: 300px;
     width: 100vw;
-    height: 100vh;
+
+    background: #ffffff33;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 
     .navbar-menu {
       max-width: 300px;
@@ -31,14 +38,41 @@
       padding: 0;
       list-style-type: none;
 
+      .sub-menu.activated {
+        visibility: visible;
+        max-height: 900px;
+      }
+
+      .sub-menu {
+        visibility: hidden;
+        max-height: 0px;
+        padding: 0;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .sub-item,
       .menu-item {
-        display: flex;
-        align-items: center;
-        background: #ffffffc2;
+        padding: 10px 30px;
+        height: 45px;
         max-width: 300px;
         width: 100vw;
-        padding: 10px 30px;
-        color: dark;
+
+        cursor: pointer !important;
+
+        display: flex;
+        align-items: center;
+
+        background: #b6b6b68c;
+        a {
+          color: #212529;
+        }
+      }
+
+      .menu-item {
+        background: #ffffff8c;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
 
         i {
           margin-left: 10px;
@@ -47,6 +81,14 @@
         &:first-child {
           padding: 30px;
           background: #ffffff;
+          height: 75px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          a {
+            color: white;
+          }
+          background: #1086ff;
         }
       }
     }

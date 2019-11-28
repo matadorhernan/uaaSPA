@@ -2,16 +2,86 @@
     <div class="menu-wrapper">
         <ul class="navbar-menu">
             <li class="menu-item">
+                <i class="material-icons mr-4">apps</i>
                 <span>Menu</span>
             </li>
             <li class="menu-item">
-                <span>Accesos Rapidos</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a href="https://aulavirtual.uaa.mx/login/index.php">Aula Virtual</a>
             </li>
             <li class="menu-item">
+                <a href="https://aulavirtual.uaa.mx/login/index.php">ESIIMA</a>
+            </li>
+            <li class="menu-item" (click)="openSubMenu('quick')" [ngClass]="{'activated': isQuickActive}">
+                <span>Menu Rápido</span>
+                <i class="material-icons">keyboard_arrow_down</i>
+            </li>
+            <ul class="sub-menu" [ngClass]="{'activated': isQuickActive}">
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://www.uaa.mx/portal/eventos/">Eventos y Convocatorias</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://www.uaa.mx/direcciones/dgdv/rytv/">Radio y TV</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://museonacionaldelamuerte.uaa.mx/">Museo</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="http://biblioteca.uaa.mx/index.php/biblioteca-digital">Biblioteca Digital</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://www.uaa.mx/portal/calendarios/">Calendarios</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://www.uaa.mx/portal/directorio/">Directorio</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="https://correoweb.uaa.mx/">Correo Institucional</a>
+                </li>
+            </ul>
+
+            <li class="menu-item" (click)="openSubMenu('university')">
                 <span>Universidad</span>
                 <i class="material-icons">keyboard_arrow_down</i>
             </li>
+
+            <ul class="sub-menu" [ngClass]="{'activated': isUniversityActive}">
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Eventos y Convocatorias</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Radio y TV</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Museo</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Biblioteca Digital</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Calendarios</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Directorio</a>
+                </li>
+                <li class="sub-item">
+                    <i class="material-icons mr-2">sort</i>
+                    <a href="">Correo Institucional</a>
+                </li>
+            </ul>
+
             <li class="menu-item">
                 <span>Admisiones</span>
                 <i class="material-icons">keyboard_arrow_down</i>
@@ -36,12 +106,9 @@
                 <span>Comunicación</span>
                 <i class="material-icons">keyboard_arrow_down</i>
             </li>
-            <li class="menu-item store">
-                <span>Tienda</span>
-                <i class="material-icons">local_mall</i>
-            </li>
         </ul>
     </div>
 </nav>
-<nav class="navbar-area" (click)="deactivateSideNav()">
+<nav class="navbar-area" (click)="deactivateSideNav()" id="back-nav-modal">
+    <div class="blur-back"></div>
 </nav>
