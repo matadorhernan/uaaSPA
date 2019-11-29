@@ -1,5 +1,5 @@
 <app-sidenav-modal *ngIf="isSideNavActive"></app-sidenav-modal>
-<nav class="navbar sticky-top">
+<nav class="navbar">
 
     <div class="navbar-brand">
         <img src="assets/brand.svg" alt="uua logo">
@@ -39,45 +39,118 @@
     <div class="navbar-drops">
 
         <ul class="menu">
+
             <li class="menu-item">
-                <span>Universidad</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Universidad</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
+
             <li class="menu-item">
-                <span>Admisiones</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Admisiones</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
+
             <li class="menu-item">
-                <span>Oferta Educativa</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Oferta Educativa</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
+
             <li class="menu-item">
-                <span>Investigación</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Investigación</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
+
             <li class="menu-item">
-                <span>Egresados</span>
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Egresados</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             </li>
+
             <li class="menu-item">
-                <span>Internacional</span>
-                <i class="material-icons">keyboard_arrow_down</i>
-            </li>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Internacional</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li> 
             <li class="menu-item">
-                <span>Comunicación</span>
-                <i class="material-icons">keyboard_arrow_down</i>
-            </li>
+                <a class="btn btn-default" data-toggle="dropdown">
+                    <span>Comunicación</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+                <div class="drop-wrapper">
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li> 
             <li class="menu-item store">
-                <span>Tienda</span>
-                <i class="material-icons">local_mall</i>
+                <a href="">
+                    <span>Tienda</span>
+                    <i class="material-icons">local_mall</i>
+                </a>
             </li>
         </ul>
 
         <div class="menu-right">
             <li class="menu-item">
-                <span>Español </span>
-                <img src="assets/mex.svg" alt="mexican flag">
-                <i class="material-icons">keyboard_arrow_down</i>
+                <a href="">
+                    <span>Español </span>
+                    <img src="assets/mex.svg" alt="mexican flag">
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
             </li>
             <button class="navbar-search">
                 <i class="material-icons">

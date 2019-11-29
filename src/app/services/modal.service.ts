@@ -6,6 +6,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ModalService {
 
-  public isSideNavActive:BehaviorSubject<boolean> = new BehaviorSubject(true)
+  public isSideNavActive:BehaviorSubject<boolean> = new BehaviorSubject(false)
   constructor() { }
 }
