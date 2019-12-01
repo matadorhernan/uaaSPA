@@ -5,7 +5,10 @@
     font-family: 'Poppins', sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #ffffff #B0B7BF ;
+}
 
+html {
+    background: #B0B7BF;
 }
 
 @media screen and (min-width: 769px){
@@ -13,20 +16,13 @@
         width: 10px;
     }
       
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #ffffff; 
-    }
-    
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        border:4px solid #fff;
-        background: #afafaf; 
+        background: #ffffff;
     }
     
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover { 
-        background: #888; 
+        background: rgb(255, 255, 255); 
     }
 }
