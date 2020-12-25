@@ -1,0 +1,23 @@
+footer {
+  position: relative;
+  background: #171715;
+  &::before {
+    content: "";
+    top: -50px;
+    position: absolute;
+    display: block;
+    background: url(/assets/tabNeg.svg) center / 200px no-repeat;
+    height: 70px;
+    width: 100%;
+  }
+
+  .footer-section:nth-child(2) {
+    background: #0e0e0e;
+  }
+  .footer-section:nth-child(3) {
+    background: #080808;
+  }
+  .footer-section:nth-child(4) {
+    background: black;
+  }
+}

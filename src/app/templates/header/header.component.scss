@@ -1,0 +1,45 @@
+header {
+  padding: 200px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(#005b9434, #005b94e8), url(/assets/header.jpg);
+  background-attachment: fixed;
+
+  h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 8em;
+    line-height: 1em;
+    span {
+      font-weight: 100;
+      font-size: 0.3em;
+      line-height: 0.3em;
+    }
+  }
+
+  .btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  header h1 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  header h1 {
+    font-size: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  header h1 {
+    font-size: 6.5vw;
+  }
+}

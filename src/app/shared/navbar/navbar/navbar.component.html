@@ -1,0 +1,84 @@
+<nav class="navbar">
+  <app-brand></app-brand>
+  <div class="wrapper">
+    <app-quick-navbar></app-quick-navbar>
+    <div class="navbar-drops">
+      <ul class="menu">
+        <li class="menu-item" *ngFor="let page of pages">
+          <a class="btn btn-default" data-toggle="dropdown">
+            <span>{{ page.title }}</span>
+            <i class="material-icons">keyboard_arrow_down</i>
+          </a>
+          <div class="drop-wrapper">
+            <div class="dropdown-menu" role="menu">
+              <div class="row">
+                <div class="col-4 section-card">
+                  <div class="card bg-dark text-white">
+                    <img
+                      class="card-img"
+                      [src]="page.image.path"
+                      [alt]="page.image.alt"
+                    />
+                    <div class="card-img-overlay">
+                      <p class="card-text">
+                        {{ page.image.caption }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-4 p-0 m-0"
+                  *ngFor="let chunk of getChunk(page.pages)"
+                >
+                  <a
+                    class="dropdown-item"
+                    [href]="item.path"
+                    *ngFor="let item of chunk"
+                  >
+                    {{ item.title }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item store">
+          <a href="">
+            <span>Tienda</span>
+            <i class="material-icons">local_mall</i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu-right">
+        <li class="menu-item">
+          <a href="">
+            <span>Español </span>
+            <img src="assets/mex.svg" alt="mexican flag" />
+            <i class="material-icons">keyboard_arrow_down</i>
+          </a>
+          <div class="drop-wrapper">
+            <div class="dropdown-menu" role="menu">
+              <a class="dropdown-item" href="#">
+                <span>Español </span>
+                <img src="assets/mex.svg" alt="mexican flag" />
+              </a>
+              <a class="dropdown-item" href="#">
+                <span>English </span>
+                <img src="assets/usa.svg" alt="mexican flag" />
+              </a>
+            </div>
+          </div>
+        </li>
+        <button class="navbar-search">
+          <i class="material-icons"> search </i>
+        </button>
+        <button class="navbar-menu" (click)="activateSideNav()">
+          <i class="material-icons" [ngClass]="{ rotate: isSideNavActive }">
+            menu
+          </i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

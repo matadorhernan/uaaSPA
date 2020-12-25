@@ -1,0 +1,59 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .right {
+    padding: 15px;
+    margin-top: 100px;
+  }
+
+  .left {
+    position: relative;
+
+    h3 {
+      text-align: right;
+      margin-right: 20px;
+      line-height: 20px;
+      color: #1086ff;
+
+      font-weight: 500;
+      &::before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 2px solid #1088ff75;
+        right: -5px;
+        top: 5px;
+      }
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    .dashes {
+      top: 35px;
+      bottom: 15px;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+      width: 1px;
+      height: calc(100% - 50px);
+
+      &::before {
+        position: absolute;
+        border: dashed 3px #1088ff33;
+        height: calc(100% + 30px);
+
+        box-sizing: border-box;
+        content: "";
+      }
+    }
+  }
+}

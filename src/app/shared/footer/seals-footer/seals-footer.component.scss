@@ -1,0 +1,38 @@
+.row div.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+
+  .item-certificate {
+    height: 70px;
+    width: 100px;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    img {
+      height: 70px;
+      object-fit: contain;
+    }
+
+    &.long {
+      width: 150px;
+
+      img {
+        height: 160px;
+      }
+    }
+
+    &.longer {
+      width: 200px;
+      img {
+        height: 250px;
+      }
+    }
+  }
+}

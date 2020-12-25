@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  grid-template-columns: 80px 200px auto;
+
+  img {
+    height: 60px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  p {
+    color: #b0b0b0;
+  }
+}

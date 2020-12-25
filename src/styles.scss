@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif:ital@1&display=swap");
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+* {
+  font-family: Poppins, Roboto, "Helvetica Neue", sans-serif;
+}
+
+.italic {
+  font-family: "Noto Serif", Poppins, Roboto, "Helvetica Neue", sans-serif;
+  font-style: italic;
+}

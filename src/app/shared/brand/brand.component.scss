@@ -1,0 +1,46 @@
+.navbar-brand {
+  height: inherit;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #1086ff;
+  color: white;
+
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 20px 1px #00000027;
+
+  &:hover img {
+    transform: translateY(5px);
+  }
+  &:hover {
+    background: #0080ff;
+  }
+
+  img {
+    transition: 0.5s ease-in-out;
+
+    margin: 10px 20px;
+    height: 55px;
+    width: 90px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 75px;
+    width: 100%;
+    padding: 10px 20px;
+
+    font-size: 0.7em;
+    background: #23374d;
+  }
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 70px auto;
+
+  .date {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1086ff;
+    color: #1086ff;
+    border-radius: 3px;
+
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 25px 10px;
+    padding: 5px;
+
+    label {
+      font-size: 10px;
+      line-height: 10px;
+      text-align: center;
+    }
+
+    label:last-child {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 170px auto;
+  margin-bottom: 20px;
+  img {
+    height: 100px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  h2 {
+    color: #1086ff;
+    margin-top: 0;
+    line-height: 20px;
+    font-size: 20px;
+  }
+}

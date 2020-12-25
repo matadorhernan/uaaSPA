@@ -1,0 +1,51 @@
+section {
+  .jumbotron {
+    margin: 0;
+    padding: 80px 80px 40px 80px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .quote-icon {
+      position: absolute;
+      height: 70px;
+      width: 70px;
+
+      font-size: 70px;
+      line-height: 70px;
+
+      top: calc(50% - 35px);
+      left: calc(50% - 35px);
+
+      color: #ebecee;
+    }
+    .mirror {
+      transform: scale(-1.5, 1.5);
+    }
+    .quote {
+      text-align: center;
+      span {
+        line-height: 1.5em;
+        position: relative;
+
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+
+      span:last-child {
+        font-weight: normal;
+      }
+    }
+  }
+}
