@@ -1,0 +1,23 @@
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #0f1c2b;
+
+  .view {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s;
+    background: white;
+
+    &.small {
+      transform: scale(0.9);
+      border-radius: 20px;
+      overflow: hidden;
+      opacity: 0.85;
+    }
+    .outlet {
+      padding-top: 75px;
+    }
+  }
+}

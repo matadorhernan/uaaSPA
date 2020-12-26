@@ -26,6 +26,9 @@ import { ImageQuoteComponent } from './templates/image-quote/image-quote.compone
 import { FeaturingJumbotronComponent } from './templates/featuring-jumbotron/featuring-jumbotron.component';
 import { ImageComponent } from './components/image/image.component';
 import { TimelineItemComponent } from './components/timeline-item/timeline-item.component';
+import { ArticleHeaderComponent } from './templates/article-header/article-header.component';
+import { UserItemComponent } from './components/user-item/user-item.component';
+import { ImageBlockComponent } from './templates/image-block/image-block.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,9 @@ import { TimelineItemComponent } from './components/timeline-item/timeline-item.
     FeaturingJumbotronComponent,
     ImageComponent,
     TimelineItemComponent,
+    ArticleHeaderComponent,
+    UserItemComponent,
+    ImageBlockComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .info {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 30px 20px;
+
+    h5 {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    label {
+      margin: 0;
+    }
+  }
+}

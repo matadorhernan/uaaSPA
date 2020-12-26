@@ -1,4 +1,11 @@
-<app-navbar></app-navbar>
-<app-breadcrumb></app-breadcrumb>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="app">
+  <app-side-nav *ngIf="isSideNav"></app-side-nav>
+  <div class="view" [ngClass]="{ small: isSideNav }">
+    <app-navbar></app-navbar>
+    <app-breadcrumb></app-breadcrumb>
+    <div class="outlet">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

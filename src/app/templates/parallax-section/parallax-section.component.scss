@@ -1,5 +1,9 @@
 section {
-  background: linear-gradient(#005b94e8, #005b948a), url(/assets/header.jpg);
+  background: linear-gradient(#142130da, #23374d), url(/assets/header.jpg);
   background-attachment: fixed;
   color: white;
+  p {
+    line-height: 2em;
+    font-size: 1.1em;
+  }
 }

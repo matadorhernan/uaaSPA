@@ -9,46 +9,50 @@ export const information_es = {
     },
   },
   navbar: {
-    quickLinks: [
-      {
-        title: 'EVENTOS Y CONVOCATORIAS',
-        path: 'https://www.uaa.mx/portal/eventos/',
-      },
-      {
-        title: 'RADIO Y TV',
-        path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
-      },
-      {
-        title: 'MUSEO',
-        path: 'https://museonacionaldelamuerte.uaa.mx/',
-      },
-      {
-        title: 'BIBLIOTECA DIGITAL',
-        path: 'http://biblioteca.uaa.mx/index.php/biblioteca-digital',
-      },
-      {
-        title: 'CALENDARIOS',
-        path: 'https://www.uaa.mx/portal/calendarios/',
-      },
-      {
-        title: 'DIRECTORIO',
-        path: 'https://www.uaa.mx/portal/directorio/',
-      },
-      {
-        title: 'CORREO INSTITUCIONAL',
-        path: 'https://correoweb.uaa.mx/',
-      },
-      {
-        title: 'AULA VIRTUAL',
-        path: 'https://aulavirtual.uaa.mx/login/index.php',
-      },
-      {
-        title: 'ESIIMA ',
-        path: 'https://aulavirtual.uaa.mx/login/index.php',
-      },
-    ],
+    quickLinks: {
+      title: 'Menu Rapido',
+      pages: [
+        {
+          title: 'EVENTOS Y CONVOCATORIAS',
+          path: 'https://www.uaa.mx/portal/eventos/',
+        },
+        {
+          title: 'RADIO Y TV',
+          path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
+        },
+        {
+          title: 'MUSEO',
+          path: 'https://museonacionaldelamuerte.uaa.mx/',
+        },
+        {
+          title: 'BIBLIOTECA DIGITAL',
+          path: 'http://biblioteca.uaa.mx/index.php/biblioteca-digital',
+        },
+        {
+          title: 'CALENDARIOS',
+          path: 'https://www.uaa.mx/portal/calendarios/',
+        },
+        {
+          title: 'DIRECTORIO',
+          path: 'https://www.uaa.mx/portal/directorio/',
+        },
+        {
+          title: 'CORREO INSTITUCIONAL',
+          path: 'https://correoweb.uaa.mx/',
+        },
+        {
+          title: 'AULA VIRTUAL',
+          path: 'https://aulavirtual.uaa.mx/login/index.php',
+        },
+        {
+          title: 'ESIIMA ',
+          path: 'https://aulavirtual.uaa.mx/login/index.php',
+        },
+      ],
+    },
     pages: [
       {
+        id: 'university',
         title: 'Universidad',
         image: {
           path:
@@ -112,6 +116,7 @@ export const information_es = {
         ],
       },
       {
+        id: 'admisions',
         title: 'Admisiones',
         image: {
           path:
@@ -154,6 +159,7 @@ export const information_es = {
         ],
       },
       {
+        id: 'programs',
         title: 'Oferta Educativa',
         image: {
           path:
@@ -204,6 +210,7 @@ export const information_es = {
         ],
       },
       {
+        id: 'international',
         title: 'Internacional',
         image: {
           path:

@@ -1,343 +1,51 @@
 <nav class="navbar-modal" id="side-nav-modal">
-    <div class="menu-wrapper">
-        <ul class="navbar-menu">
-            <li class="menu-item main-item">
-                <i class="material-icons mr-4">apps</i>
-                <span>Menu</span>
+  <div class="menu-wrapper">
+    <ul class="navbar-menu">
+      <li class="menu-item main-item">
+        <i class="material-icons mr-4">apps</i>
+        <span>Menu</span>
+      </li>
+
+      <div class="menu-slider">
+        <div class="navbar-drop">
+          <li
+            class="menu-item"
+            (click)="openSubMenu('quick')"
+            [ngClass]="{ activated: isQuickActive }"
+          >
+            <span>{{ navbar.quickLinks.title }}</span>
+            <i class="material-icons">keyboard_arrow_down</i>
+          </li>
+          <ul class="sub-menu" [ngClass]="{ activated: isQuickActive }">
+            <li class="sub-item" *ngFor="let item of navbar.quickLinks.pages">
+              <i class="material-icons mr-2">sort</i>
+              <a [href]="item.path">
+                {{ item.title | titlecase }}
+              </a>
             </li>
-            <div class="menu-slider">
-                <li class="menu-item">
-                    <a href="https://aulavirtual.uaa.mx/login/index.php">Aula Virtual</a>
-                </li>
-                <li class="menu-item">
-                    <a href="https://aulavirtual.uaa.mx/login/index.php">ESIIMA</a>
-                </li>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('quick')" [ngClass]="{'activated': isQuickActive}">
-                        <span>Menu Rápido</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isQuickActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Eventos y Convocatorias</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/direcciones/dgdv/rytv/">Radio y TV</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://museonacionaldelamuerte.uaa.mx/">Museo</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="http://biblioteca.uaa.mx/index.php/biblioteca-digital">Biblioteca Digital</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/calendarios/">Calendarios</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/directorio/">Directorio</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://correoweb.uaa.mx/">Correo Institucional</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('university')"
-                        [ngClass]="{'activated': isUniversityActive}">
-                        <span>Universidad</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isUniversityActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a
-                                href="https://www.uaa.mx/portal/nuestra-universidad/institucion/historia/">Institución</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/nuestra-universidad/rectoria/">Rectoría</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/sg/">Secretaría General</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/nuestra-universidad/direcciones-generales/">Direcciones
-                                Generales</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/">Centros
-                                Académicos</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/nuestra-universidad/plan-de-desarrollo/">Plan de
-                                Desarrollo</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/consejo/">Consejo Universitario</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/consejo/?page_id=638">Correo Universitario</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/institucion/LEGISLACION%20UNIVERSITARIA.pdf">Legislación
-                                Universitaria</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/nuestra-universidad/modelo-educativo-institucional/">Modelo
-                                Educativo Institucional</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a
-                                href="https://www.uaa.mx/portal/nuestra-universidad/asociaciones-y-otros-organismos/">Asociaciones</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('admissions')"
-                        [ngClass]="{'activated': isAdmissionsActive}">
-                        <span>Admisiones</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isAdmissionsActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/proceso-de-admision/">Convocatoria</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/inscripcion/">Nuevo ingreso</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/revalidacion/">Revalidación</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/resultados-de-admision/">Resultados de
-                                admisión</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/apoyos-y-becas/">Apoyos y Becas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/oferta-educativa/licenciaturas/">Licenciaturas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/departamento-de-orientacion-educativa/">Orientación
-                                Educativa</a>
-                        </li>
+          </ul>
+        </div>
 
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('academics')"
-                        [ngClass]="{'activated': isAcademicsActive}">
-                        <span>Oferta Educativa</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isAcademicsActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/oferta-educativa/licenciaturas/">Licenciaturas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a
-                                href="https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/centro-de-educacion-media/">Bachillerato</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/oferta-educativa/posgrados/">Posgrados</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="http://cursos.uaa.mx/index.php?m=d">Diplomados</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="http://cursos.uaa.mx/index.php?m=l">Cursos de Extensión Académica</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/direcciones/dgdv/rytv/">Cursos en Línea</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/direcciones/dgdv/rytv/"> Cursos de Idiomas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a
-                                href="https://www.uaa.mx/portal/oferta-educativa/extension-educacion-continua-y-a-distancia/">Extensión,
-                                Educación Continua y a
-                                Distancia</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="http://modeloeducativo.uaa.mx/uaa-14/">Descubre tu carrera</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('research')" [ngClass]="{'activated': isResearchActive}">
-                        <span>Investigación</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isResearchActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://investigacion.uaa.mx/proyecto">Sistemas de Proyectos de Investigacion</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/docentes/investigacion/normatividad/">Normatividad</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/docentes/investigacion/eventos-cientificos/">Eventos
-                                científicos</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/docentes/investigacion/contacto-2/">Investigación
-                                Científica</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a
-                                href="https://www.uaa.mx/portal/docentes/investigacion/investigacion-cientifica/desarrollo-de-la-investigacion/">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('graduates')"
-                        [ngClass]="{'activated': isGraduatesActive}">
-                        <span>Egresados</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isGraduatesActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/alumnos/egreso-y-titulacion/">Egreso</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/alumnos/bolsa-de-trabajo/">Bolsa de trabajo</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/alumnos/programa-para-emprendedores/">Programa para emprendedores</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/wp-content/uploads/2019/04/TR%C3%81MITES-A-DISTANCIA-2019.pdf">Trámites a Distancia</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/wp-content/uploads/2019/04/DUPLICADO-DE-T%C3%8DTULO-PROFESIONAL.pdf">Duplicado Título Profesional</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('international')"
-                        [ngClass]="{'activated': isInternationalActive}">
-                        <span>Internacional</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isInternationalActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="">Costo de Vida</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="">Apartamentos</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/inscripcion/">Nuevo Ingreso</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/aspirantes/apoyos-y-becas/">Apoyos y Becas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Licenciaturas</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-drop">
-                    <li class="menu-item" (click)="openSubMenu('media')" [ngClass]="{'activated': isMediaActive}">
-                        <span>Comunicación</span>
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </li>
-                    <ul class="sub-menu" [ngClass]="{'activated': isMediaActive}">
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Noticias</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Eventos y convocatorias</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Convocatorias Externas</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Editorial</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Publicaciones</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Revistas UAA</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Gaceta Universitaria</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Social Media</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Radio y TV</a>
-                        </li>
-                        <li class="sub-item">
-                            <i class="material-icons mr-2">sort</i>
-                            <a href="https://www.uaa.mx/portal/eventos/">Editorial del Rector</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </ul>
-    </div>
+        <div class="navbar-drop" *ngFor="let item of navbar.pages">
+          <li
+            class="menu-item"
+            (click)="openSubMenu('university')"
+            [ngClass]="{ activated: isUniversityActive && item.title == '' }"
+          >
+            <span>{{ item.title }}</span>
+            <i class="material-icons">keyboard_arrow_down</i>
+          </li>
+          <ul class="sub-menu" [ngClass]="{ activated: isUniversityActive }">
+            <li class="sub-item" *ngFor="let subItem of item.pages">
+              <i class="material-icons mr-2">sort</i>
+              <a [href]="subItem.path">
+                {{ subItem.title | titlecase }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ul>
+  </div>
 </nav>
-<nav class="navbar-area" (click)="deactivateSideNav()">
-</nav>
+<nav class="navbar-area" (click)="deactivateSideNav()"></nav>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavService } from 'src/app/services/nav.service';
+import { information_es } from 'src/data/information';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-nav.component.scss'],
 })
 export class SideNavComponent implements OnInit {
+  public navbar = information_es.navbar;
+
   public isQuickActive: boolean = false;
   public isUniversityActive: boolean = false;
   public isAdmissionsActive: boolean = false;
@@ -14,15 +18,19 @@ export class SideNavComponent implements OnInit {
   public isGraduatesActive: boolean = false;
   public isInternationalActive: boolean = false;
   public isMediaActive: boolean = false;
-
   public isSideNavActive: boolean = false;
-  constructor() {}
+
+  constructor(private readonly navService: NavService) {
+    this.navService.$isSideNav.subscribe((status) => {
+      this.isSideNavActive = status;
+    });
+  }
 
   public deactivateSideNav(): void {
     let nav = document.getElementById('side-nav-modal');
     nav.classList.remove('activated');
     setTimeout(() => {
-      // this.modalService.isSideNavActive.next(!this.isSideNavActive);
+      this.navService.$isSideNav.next(!this.isSideNavActive);
     }, 300);
   }
 
@@ -75,5 +83,10 @@ export class SideNavComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      let nav = document.getElementById('side-nav-modal');
+      nav.classList.add('activated');
+    }, 5);
+  }
 }

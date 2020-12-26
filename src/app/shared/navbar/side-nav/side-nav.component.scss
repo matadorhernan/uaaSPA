@@ -11,6 +11,7 @@
   z-index: 1400;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 20px 1px #00000027;
+  background: white;
 
   max-width: 300px;
   width: 100vw;
@@ -21,9 +22,6 @@
   .menu-wrapper {
     height: 100vh;
     overflow: hidden;
-    background: #ffffff33;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
 
     .navbar-menu {
       max-width: 300px;
@@ -46,35 +44,12 @@
         overflow-y: auto;
         overflow-x: hidden;
 
-        .sub-item,
+        .sub-menu.activated .sub-item,
         .menu-item {
-          padding: 10px 30px;
-          justify-content: flex-start;
-          align-items: center;
-          display: flex;
+          padding: 10px 0 10px 30px;
           height: 45px;
           max-width: 300px;
-          width: 100vw;
-
           cursor: pointer !important;
-
-          display: flex;
-          align-items: center;
-
-          a {
-            color: #212529;
-          }
-        }
-
-        .sub-menu.activated {
-          visibility: visible;
-          max-height: 900px;
-
-          .sub-item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-          }
         }
 
         .sub-menu {
@@ -83,14 +58,23 @@
           padding: 0;
           margin: 0;
           transition: max-height 0.5s ease-in-out;
+          background: #ececec;
 
-          background: #000000b2;
+          &.activated {
+            visibility: visible;
+            max-height: 900px;
+            .sub-item {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+            }
+          }
 
           .sub-item {
             display: none;
             a,
             i {
-              color: white;
+              color: black;
               transition: padding 0.3s ease-in-out;
               display: block;
               text-decoration: none;
@@ -98,7 +82,11 @@
           }
 
           .sub-item:hover {
-            background: #23374d;
+            background: #1086ff;
+            a,
+            i {
+              color: white;
+            }
             i {
               padding-left: 10px;
             }
@@ -106,8 +94,11 @@
         }
 
         .menu-item {
-          background: #ffffff8c;
+          background: #fff;
           transition: padding 0.3s ease-in-out;
+
+          display: grid;
+          grid-template-columns: auto 50px;
 
           i {
             margin-left: 10px;
@@ -115,19 +106,7 @@
 
           &:hover {
             padding-left: 50px;
-            background: #ffffff5b;
-          }
-        }
-
-        & > .menu-item {
-          a {
-            text-decoration: none !important;
-            color: white;
-          }
-          background: #1086ff;
-
-          &:hover {
-            background: #23374d;
+            background: #ececec;
           }
         }
       }
