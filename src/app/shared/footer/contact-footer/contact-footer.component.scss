@@ -1,20 +1,30 @@
 .container {
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-  grid-template-columns: 80px 200px auto;
+    img {
+      height: 90px;
+    }
 
-  img {
-    height: 60px;
+    h5 {
+      font-size: 1.3em;
+      margin: 0;
+      margin-left: 10px;
+      color: white;
+    }
   }
 
-  h5 {
-    margin-top: 10px;
-    color: white;
-  }
-
-  p {
+  .info {
     color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    p {
+      width: 100%;
+    }
   }
 }

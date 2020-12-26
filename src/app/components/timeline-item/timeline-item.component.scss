@@ -1,21 +1,15 @@
 .wrapper {
   position: relative;
-  overflow: hidden;
-
-  display: grid;
-  grid-template-columns: 50% 50%;
-
-  .right {
-    padding: 15px;
-    margin-top: 100px;
-  }
 
   .left {
-    position: relative;
+    padding: 30px;
+    padding-left: 0;
+  }
 
+  .right {
     h3 {
-      text-align: right;
-      margin-right: 20px;
+      text-align: left;
+      margin-left: 20px;
       line-height: 20px;
       color: #1086ff;
 
@@ -28,20 +22,24 @@
         border-radius: 50%;
         background: #ffffff;
         border: 2px solid #1088ff75;
-        right: -5px;
+        left: -5px;
         top: 5px;
       }
     }
 
     li {
-      padding: 15px;
+      padding: 0 15px;
+      text-decoration: none;
+      list-style: none;
+
+      margin-bottom: 50px;
     }
 
     .dashes {
       top: 35px;
       bottom: 15px;
       position: absolute;
-      right: 0;
+      left: 0;
       overflow: hidden;
       width: 1px;
       height: calc(100% - 50px);
