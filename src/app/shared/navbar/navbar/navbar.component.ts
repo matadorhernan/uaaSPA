@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   public pages = information_es.navbar.pages;
   public isSideNav: boolean = false;
   private isSideNavEvent: Subscription;
+  isNavbarCollapsed = true;
 
   constructor(private readonly navService: NavService) {
     this.isSideNavEvent = navService.$isSideNav.subscribe((status) => {
@@ -26,7 +27,7 @@ export class NavbarComponent implements OnInit {
   }
 
   public getChunk(pages: any): any {
-    return _.chunk(pages, 6);
+    return _.chunk(pages, 7);
   }
   ngOnInit(): void {}
   ngOnDestroy(): void {

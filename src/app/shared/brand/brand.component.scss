@@ -1,12 +1,13 @@
 .navbar-brand {
-  height: inherit;
+  width: 100%;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 
   z-index: 2;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: auto 250px;
   align-items: center;
 
   background: #1086ff;
@@ -25,7 +26,6 @@
 
   img {
     transition: 0.5s ease-in-out;
-
     margin: 10px 20px;
     height: 55px;
     width: 90px;

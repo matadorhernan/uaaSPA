@@ -11,6 +11,8 @@ import { ContactFooterComponent } from './footer/contact-footer/contact-footer.c
 import { SealsFooterComponent } from './footer/seals-footer/seals-footer.component';
 import { NavFooterItemComponent } from './footer/nav-footer/nav-footer-item/nav-footer-item.component';
 import { CuadrosoftFooterComponent } from './footer/cuadrosoft-footer/cuadrosoft-footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,6 @@ import { CuadrosoftFooterComponent } from './footer/cuadrosoft-footer/cuadrosoft
     ContactFooterComponent,
     SealsFooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, ComponentsModule, NgbModule],
 })
 export class SharedModule {}
