@@ -37,10 +37,17 @@
                 <div class="container py-5">
                   <div class="row w-100">
                     <div class="col-4 image">
-                      <app-image></app-image>
+                      <app-image
+                        [image]="page.image.path"
+                        [alternativeText]="page.image.alt"
+                        [caption]="page.image.caption"
+                      ></app-image>
                     </div>
                     <div class="col-8 info pl-3">
-                      <app-title-head></app-title-head>
+                      <app-title-head
+                        [label]="'Menu'"
+                        [title]="page.title"
+                      ></app-title-head>
                       <div class="row mt-5">
                         <div
                           class="col-6"

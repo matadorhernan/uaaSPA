@@ -1,12 +1,9 @@
 <header>
   <div class="container py-5">
     <div class="d-block d-md-none py-5 my-5"></div>
-    <h1 class="mb-5 d-none d-md-block pt-5">
-      <span> Gallos Aguascalientes </span>
-      <br />
-      Universidad <br />
-      Autónoma de <br />
-      Aguascalientes
-    </h1>
+    <div class="title-block mt-5 d-none d-md-block pt-5">
+      <label> {{ label }} </label>
+      <h1 [innerHTML]="title"></h1>
+    </div>
   </div>
 </header>

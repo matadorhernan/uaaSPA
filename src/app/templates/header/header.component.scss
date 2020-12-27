@@ -6,15 +6,17 @@ header {
   background: linear-gradient(#005b9434, #005b94e8), url(/assets/header.jpg);
   background-attachment: fixed;
 
-  h1 {
+  label {
     color: white;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  h1 {
     font-weight: 500;
+    color: white;
     font-size: 6em;
     line-height: 1em;
-    span {
-      font-weight: 100;
-      font-size: 0.3em;
-      line-height: 0.3em;
-    }
   }
 }

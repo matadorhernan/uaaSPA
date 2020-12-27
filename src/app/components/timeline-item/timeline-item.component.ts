@@ -12,6 +12,5 @@ export class TimelineItemComponent implements OnInit {
   @Input('title') title: string;
   @Input('list') list: any[];
   constructor() {}
-
   ngOnInit(): void {}
 }

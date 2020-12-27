@@ -2,6 +2,7 @@ export const information_es = {
   lang: 'es',
   university: {
     title: 'Universidad Autónoma de Aguascalientes',
+    subtitle: 'Campus Sur',
     markup: 'Universidad <br />Autónoma de <br />Aguascalientes',
     logo: {
       path: 'assets/brand.svg',
