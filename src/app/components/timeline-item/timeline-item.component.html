@@ -1,32 +1,16 @@
 <div class="wrapper row pl-3">
   <div class="left col-lg-6 col-md-12 d-none d-md-block">
-    <app-image></app-image>
+    <app-image
+      [image]="image"
+      [caption]="caption"
+      [alternativeText]="alternativeText"
+    ></app-image>
   </div>
   <div class="right col-lg-6 col-md-12">
     <div class="dashes"></div>
-    <h3>1992</h3>
+    <h3>{{ title }}</h3>
     <ul class="p-0">
-      <li>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
-          nostrum.
-        </h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio cumque
-          qui sint! Et eius nulla temporibus voluptatem! Corrupti dolorem totam
-          magni iste mollitia nulla rerum minima ratione, odio pariatur
-          accusamus!
-        </p>
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolorem.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolorem.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolorem.
-      </li>
+      <li [innerHTML]="item" *ngFor="let item of list"></li>
     </ul>
   </div>
 </div>

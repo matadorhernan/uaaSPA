@@ -1,9 +1,9 @@
 <div class="card">
   <div class="card-body">
-    <p class="card-text">
-      <span>Conocimientos</span> <br />
-      deseables del aspirante
-    </p>
-    <button class="btn btn-outline-primary m-2">Ver mas...</button>
+    <h3>{{ title }}</h3>
+    <p class="card-text">{{ text }}</p>
+    <a *ngIf="path" [href]="path" class="btn btn-outline-primary mt-4">{{
+      button
+    }}</a>
   </div>
 </div>

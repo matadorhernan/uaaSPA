@@ -1,12 +1,9 @@
 <div class="wrapper d-flex">
-  <img class="d-md-block d-none mr-3" src="/assets/header.jpg" alt="" />
+  <img class="d-md-block d-none mr-3" [src]="image" alt="alternativeText" />
   <div class="info">
-    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>{{ title }}</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit
-      aliquid ullam laborum? Aperiam sint ad accusantium consectetur. Saepe
-      facilis nisi exercitationem molestias dolore eveniet, nemo laudantium
-      aliquam dolorum aliquid?
+      {{ text }}
     </p>
   </div>
 </div>

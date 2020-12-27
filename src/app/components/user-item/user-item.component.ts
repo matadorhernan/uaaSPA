@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user-item',
   templateUrl: './user-item.component.html',
-  styleUrls: ['./user-item.component.scss']
+  styleUrls: ['./user-item.component.scss'],
 })
 export class UserItemComponent implements OnInit {
+  @Input('image') image: string;
+  @Input('alternativeText') alternativeText: string;
+  @Input('name') name: string;
+  @Input('label') label: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
