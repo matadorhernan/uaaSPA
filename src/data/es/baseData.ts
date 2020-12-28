@@ -1,6 +1,8 @@
 import { landing_es } from './landing';
 import { universityHistory_es } from './university/university-history';
 import { universityMotto_es } from './university/university-motto';
+import { universityHytm_es } from './university/university-hytm';
+import { universityLogo_es } from './university/university-logo';
 export const baseData_es = {
   lang: 'es',
   university: {
@@ -101,7 +103,12 @@ export const baseData_es = {
             path: 'universidad/institucion/historia',
             text:
               'Conoce mas acerca de la Universidad en los siguientes apartados de esta seccion.',
-            pages: [universityHistory_es, universityMotto_es],
+            pages: [
+              universityHistory_es,
+              universityMotto_es,
+              universityHytm_es,
+              universityLogo_es,
+            ],
           },
           {
             title: 'Rectoría',

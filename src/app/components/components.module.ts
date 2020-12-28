@@ -8,6 +8,7 @@ import { ImageComponent } from './image/image.component';
 import { CardComponent } from './card/card.component';
 import { TimelineItemComponent } from './timeline-item/timeline-item.component';
 import { UserItemComponent } from './user-item/user-item.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,6 @@ import { UserItemComponent } from './user-item/user-item.component';
     TimelineItemComponent,
     UserItemComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 })
 export class ComponentsModule {}

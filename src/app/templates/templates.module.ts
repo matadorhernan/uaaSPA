@@ -18,6 +18,7 @@ import { ArticleHeaderComponent } from './article-header/article-header.componen
 import { ImageBlockComponent } from './image-block/image-block.component';
 import { SanitizeHtmlPipe } from '../pipes/sanitize-html.pipe';
 import { ImageSectionComponent } from './image-section/image-section.component';
+import { TextSectionComponent } from './text-section/text-section.component';
 import { TemplatesResolverComponent } from './templates-resolver.component';
 
 @NgModule({
@@ -37,6 +38,7 @@ import { TemplatesResolverComponent } from './templates-resolver.component';
     ImageBlockComponent,
     SanitizeHtmlPipe,
     ImageSectionComponent,
+    TextSectionComponent,
     TemplatesResolverComponent,
   ],
   exports: [
@@ -54,6 +56,7 @@ import { TemplatesResolverComponent } from './templates-resolver.component';
     ArticleHeaderComponent,
     ImageBlockComponent,
     ImageSectionComponent,
+    TextSectionComponent,
     TemplatesResolverComponent,
   ],
   imports: [CommonModule, ComponentsModule, NgbModule],

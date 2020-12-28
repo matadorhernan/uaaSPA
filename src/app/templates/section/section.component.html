@@ -4,7 +4,7 @@
       [title]="data?.titleHead.title"
       [label]="data?.titleHead.label"
     ></app-title-head>
-    <p class="mb-5" [innerHTML]="data?.text"></p>
+    <p [innerHTML]="data?.text"></p>
     <a
       *ngIf="data?.button != undefined"
       [href]="data?.button.path"

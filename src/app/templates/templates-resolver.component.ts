@@ -15,6 +15,7 @@ import { ImageSectionComponent } from './image-section/image-section.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SectionComponent } from './section/section.component';
 import { SocialComponent } from './social/social.component';
+import { TextSectionComponent } from './text-section/text-section.component';
 
 @Component({
   selector: 'app-templates-resolver',
@@ -45,6 +46,8 @@ export class TemplatesResolverComponent implements AfterViewInit {
       else if (data.sectionType == 'quote-section') section = QuoteComponent;
       else if (data.sectionType == 'image-quote-section')
         section = ImageQuoteComponent;
+      else if (data.sectionType == 'text-section')
+        section = TextSectionComponent;
       else if (data.sectionType == 'basic-section') section = SectionComponent;
 
       factory = this.componentFactoryResolver.resolveComponentFactory(section);

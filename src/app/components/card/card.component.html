@@ -2,7 +2,7 @@
   <div class="card-body">
     <a
       *ngIf="title != undefined"
-      [href]="path"
+      [routerLink]="['/' + path]"
       class="btn btn-default mb-0"
       type="button"
     >
