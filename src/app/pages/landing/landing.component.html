@@ -1,7 +1,9 @@
 <app-header
-  [label]="landing.university.subtitle"
-  [title]="landing.university.markup"
+  [label]="baseInfo.university.subtitle"
+  [title]="baseInfo.university.markup"
+  [image]="baseInfo.root.landing.image"
 ></app-header>
-<app-sub-header></app-sub-header>
-<app-events></app-events>
-<app-social></app-social>
+<app-templates-resolver
+  *ngFor="let section of baseInfo.root.landing.sections"
+  [data]="section"
+></app-templates-resolver>

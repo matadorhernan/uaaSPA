@@ -1,9 +1,16 @@
-<div class="card">
+<div class="card py-3">
   <div class="card-body">
-    <h3>{{ title }}</h3>
-    <p class="card-text">{{ text }}</p>
-    <a *ngIf="path" [href]="path" class="btn btn-outline-primary mt-4">{{
-      button
-    }}</a>
+    <a
+      *ngIf="title != undefined"
+      [href]="path"
+      class="btn btn-default mb-0"
+      type="button"
+    >
+      <div>
+        {{ title }}
+        <i class="material-icons">chevron_right</i>
+      </div>
+    </a>
+    <p class="card-text">{{ subtitle }}</p>
   </div>
 </div>

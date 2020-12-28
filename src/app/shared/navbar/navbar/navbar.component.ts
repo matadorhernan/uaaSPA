@@ -1,4 +1,4 @@
-import { information_es } from 'src/data/information';
+import { baseData_es } from 'src/data/es/baseData';
 import { Component, OnInit } from '@angular/core';
 import { NavService } from 'src/app/services/nav.service';
 
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  public pages = information_es.navbar.pages;
+  public pages = baseData_es.root.pages;
   public isSideNav: boolean = false;
   private isSideNavEvent: Subscription;
   isNavbarCollapsed = true;

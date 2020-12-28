@@ -1,5 +1,6 @@
 section {
   background: #142130;
+
   .jumbotron {
     margin: 0;
     padding-bottom: 40px;
@@ -32,24 +33,27 @@ section {
       text-align: center;
       span {
         font-style: italic;
-        line-height: 1.5em;
         position: relative;
 
-        font-size: 1.5em;
         font-weight: 500;
+        line-height: 1.9em;
+        font-size: 1.3em;
       }
     }
 
     label {
-      color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       font-weight: 500;
+      font-size: 1.3em;
+
+      color: white;
 
       span:last-child {
         font-weight: normal;
+        margin-top: 10px;
       }
     }
   }

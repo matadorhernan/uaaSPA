@@ -13,6 +13,7 @@ import { NavFooterItemComponent } from './footer/nav-footer/nav-footer-item/nav-
 import { CuadrosoftFooterComponent } from './footer/cuadrosoft-footer/cuadrosoft-footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsModule } from '../components/components.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,6 @@ import { ComponentsModule } from '../components/components.module';
     ContactFooterComponent,
     SealsFooterComponent,
   ],
-  imports: [CommonModule, ComponentsModule, NgbModule],
+  imports: [CommonModule, ComponentsModule, NgbModule, RouterModule],
 })
 export class SharedModule {}

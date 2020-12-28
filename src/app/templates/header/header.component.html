@@ -1,9 +1,10 @@
-<header>
+<header #header>
   <div class="container py-5">
-    <div class="d-block d-md-none py-5 my-5"></div>
-    <div class="title-block mt-5 d-none d-md-block pt-5">
-      <label> {{ label }} </label>
-      <h1 [innerHTML]="title"></h1>
+    <div class="row">
+      <div class="col-12 title-block mt-5 pt-5">
+        <label> {{ label }} </label>
+        <h1 [innerHTML]="title"></h1>
+      </div>
     </div>
   </div>
 </header>

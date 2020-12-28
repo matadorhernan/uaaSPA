@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubHeaderComponent } from './sub-header.component';
+import { ImageSectionComponent } from './image-section.component';
 
-describe('SubHeaderComponent', () => {
-  let component: SubHeaderComponent;
-  let fixture: ComponentFixture<SubHeaderComponent>;
+describe('ImageSectionComponent', () => {
+  let component: ImageSectionComponent;
+  let fixture: ComponentFixture<ImageSectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubHeaderComponent ]
+      declarations: [ ImageSectionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubHeaderComponent);
+    fixture = TestBed.createComponent(ImageSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

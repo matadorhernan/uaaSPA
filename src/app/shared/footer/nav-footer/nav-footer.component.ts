@@ -1,4 +1,4 @@
-import { information_es } from 'src/data/information';
+import { baseData_es } from 'src/data/es/baseData';
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 
@@ -8,12 +8,13 @@ import * as _ from 'lodash';
   styleUrls: ['./nav-footer.component.scss'],
 })
 export class NavFooterComponent implements OnInit {
-  public pages = information_es.navbar.pages;
+  public pages = baseData_es.root.pages;
 
   constructor() {}
 
   public getChunk(pages: any): any {
     return _.chunk(pages, 4);
   }
+
   ngOnInit(): void {}
 }

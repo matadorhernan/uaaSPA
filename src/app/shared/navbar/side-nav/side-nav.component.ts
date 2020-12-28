@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavService } from 'src/app/services/nav.service';
-import { information_es } from 'src/data/information';
+import { baseData_es } from 'src/data/es/baseData';
 
 @Component({
   selector: 'app-side-nav',
@@ -8,7 +8,7 @@ import { information_es } from 'src/data/information';
   styleUrls: ['./side-nav.component.scss'],
 })
 export class SideNavComponent implements OnInit {
-  public navbar = information_es.navbar;
+  public navbar = baseData_es.root;
 
   public isQuickActive: boolean = false;
   public isUniversityActive: boolean = false;

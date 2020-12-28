@@ -7,6 +7,13 @@ const routes: Routes = [
     path: '',
     component: LandingComponent,
   },
+  {
+    path: 'universidad',
+    loadChildren: () =>
+      import('./pages/university/university.module').then(
+        (m) => m.UniversityPageModule
+      ),
+  },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

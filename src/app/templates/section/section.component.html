@@ -1,15 +1,20 @@
 <section>
-  <div class="container py-5">
-    <app-title-head></app-title-head>
-    <p class="mb-5">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sit est
-      fugiat, repudiandae sapiente, debitis facere minima beatae quae
-      consectetur sed? Reprehenderit, ducimus laboriosam itaque autem
-      exercitationem delectus vel a.
-    </p>
-    <button class="btn btn-outline-primary" type="button">
-      <span>Explorar Oferta</span>
-      <i class="material-icons">chevron_right</i>
-    </button>
+  <div class="container pt-5">
+    <app-title-head
+      [title]="data?.titleHead.title"
+      [label]="data?.titleHead.label"
+    ></app-title-head>
+    <p class="mb-5" [innerHTML]="data?.text"></p>
+    <a
+      *ngIf="data?.button != undefined"
+      [href]="data?.button.path"
+      class="btn btn-outline-primary mb-lg-0 mb-5"
+      type="button"
+    >
+      <div>
+        <span>{{ data?.button.text }}</span>
+        <i class="material-icons">chevron_right</i>
+      </div>
+    </a>
   </div>
 </section>

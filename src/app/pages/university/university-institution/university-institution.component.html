@@ -1,0 +1,10 @@
+<app-header
+  [image]="currentData.image"
+  [title]="currentData.title"
+  [label]="currentData.subtitle"
+></app-header>
+<app-card-grid [data]="localData"></app-card-grid>
+<app-templates-resolver
+  [data]="section"
+  *ngFor="let section of currentData.sections"
+></app-templates-resolver>

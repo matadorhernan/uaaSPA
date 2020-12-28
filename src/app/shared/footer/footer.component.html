@@ -1,14 +1,23 @@
-<footer>
-  <div class="footer-section py-5">
-    <app-nav-footer></app-nav-footer>
-  </div>
-  <div class="footer-section py-5">
-    <app-contact-footer></app-contact-footer>
-  </div>
-  <div class="footer-section py-5">
-    <app-seals-footer></app-seals-footer>
-  </div>
-  <div class="footer-section">
-    <app-cuadrosoft-footer></app-cuadrosoft-footer>
-  </div>
-</footer>
+<div class="pt-5">
+  <footer>
+    <div class="footer-section py-5">
+      <div class="container py-5 title-head">
+        <app-title-head
+          [title]="'Universidad Autónoma de Aguascalientes'"
+          [label]="'Campus SUR'"
+        >
+        </app-title-head>
+      </div>
+      <app-nav-footer></app-nav-footer>
+    </div>
+    <div class="footer-section py-5">
+      <app-contact-footer></app-contact-footer>
+    </div>
+    <div class="footer-section py-5">
+      <app-seals-footer></app-seals-footer>
+    </div>
+    <div class="footer-section">
+      <app-cuadrosoft-footer></app-cuadrosoft-footer>
+    </div>
+  </footer>
+</div>

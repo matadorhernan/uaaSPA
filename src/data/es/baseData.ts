@@ -1,15 +1,46 @@
-export const information_es = {
+import { landing_es } from './landing';
+import { universityHistory_es } from './university/university-history';
+import { universityMotto_es } from './university/university-motto';
+export const baseData_es = {
   lang: 'es',
   university: {
     title: 'Universidad Autónoma de Aguascalientes',
     subtitle: 'Campus Sur',
     markup: 'Universidad <br />Autónoma de <br />Aguascalientes',
+    address:
+      'Av. Universidad # 940, Ciudad Universitaria, C. P. 20131, Aguascalientes, Ags. MÉXICO',
+    phone: '(449) 910 74 00',
+    email: 'cvargas@correo.uaa.mx',
+    socialMedia: [
+      {
+        name: 'facebook',
+        path: '',
+      },
+      {
+        name: 'twitter',
+        path: '',
+      },
+      {
+        name: 'instagram',
+        path: '',
+      },
+      {
+        name: 'linkedin',
+        path: '',
+      },
+      {
+        name: 'youtube',
+        path: '',
+      },
+    ],
+    addressMarkup: '',
     logo: {
       path: 'assets/brand.svg',
       alt: 'uaa logo',
     },
   },
-  navbar: {
+  root: {
+    landing: landing_es,
     quickLinks: {
       title: 'Menu Rapido',
       pages: [
@@ -53,7 +84,7 @@ export const information_es = {
     },
     pages: [
       {
-        id: 'university',
+        notExternal: true,
         title: 'Universidad',
         image: {
           path:
@@ -64,60 +95,73 @@ export const information_es = {
         },
         pages: [
           {
-            title: 'Institución ',
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/institucion/historia/',
+            notExternal: true,
+            title: 'Institución',
+            subtitle: 'En esta seccion',
+            path: 'universidad/institucion/historia',
+            text:
+              'Conoce mas acerca de la Universidad en los siguientes apartados de esta seccion.',
+            pages: [universityHistory_es, universityMotto_es],
           },
           {
             title: 'Rectoría',
+            notExternal: true,
             path: 'https://www.uaa.mx/portal/nuestra-universidad/rectoria/',
           },
           {
             title: 'Secretaría General',
+            notExternal: true,
             path: 'https://www.uaa.mx/sg/',
           },
           {
             title: 'Direcciones Generales',
+            notExternal: true,
             path:
               'https://www.uaa.mx/portal/nuestra-universidad/direcciones-generales/',
           },
           {
             title: 'Centros Académicos',
+            notExternal: true,
             path:
               'https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/',
           },
           {
             title: 'Plan de Desarrollo',
+            notExternal: true,
             path:
               'https://www.uaa.mx/portal/nuestra-universidad/plan-de-desarrollo/',
           },
           {
             title: 'Consejo Universitario',
+            notExternal: true,
             path: 'https://www.uaa.mx/consejo/',
           },
           {
             title: 'Correo Universitario',
+            notExternal: true,
             path: 'https://www.uaa.mx/consejo/?page_id=638',
           },
           {
             title: 'Legislación Universitaria',
+            notExternal: true,
             path:
               'https://www.uaa.mx/institucion/LEGISLACION%20UNIVERSITARIA.pdf',
           },
           {
             title: 'Modelo Educativo Institucional',
+            notExternal: true,
             path:
               'https://www.uaa.mx/portal/nuestra-universidad/modelo-educativo-institucional/',
           },
           {
             title: 'Asociaciones',
+            notExternal: true,
             path:
               'https://www.uaa.mx/portal/nuestra-universidad/asociaciones-y-otros-organismos/',
           },
         ],
       },
       {
-        id: 'admisions',
         title: 'Admisiones',
         image: {
           path:
@@ -160,7 +204,6 @@ export const information_es = {
         ],
       },
       {
-        id: 'programs',
         title: 'Oferta Educativa',
         image: {
           path:
@@ -211,7 +254,6 @@ export const information_es = {
         ],
       },
       {
-        id: 'international',
         title: 'Internacional',
         image: {
           path:

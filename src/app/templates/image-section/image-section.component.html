@@ -1,0 +1,41 @@
+<section>
+  <div class="container py-5">
+    <app-title-head
+      [label]="data?.titleHead.label"
+      [title]="data?.titleHead.title"
+    ></app-title-head>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <p class="mt-3 pr-3" [innerHtml]="data?.text"></p>
+        <a
+          *ngIf="data?.button != undefined"
+          [href]="data?.button.path"
+          class="btn btn-outline-primary mb-lg-0 my-4"
+          type="button"
+        >
+          <div>
+            <span>{{ data?.button.text }}</span>
+            <i class="material-icons">chevron_right</i>
+          </div>
+        </a>
+      </div>
+      <div
+        *ngIf="data?.iframeMarkup != undefined"
+        class="col-lg-6 col-md-12 mt-3"
+      >
+        <div
+          class="iframe"
+          [innerHTML]="data?.iframeMarkup | sanitizeHtml"
+        ></div>
+      </div>
+      <div class="col-lg-6 col-md-12 mt-3 image">
+        <app-image
+          *ngIf="data?.image != undefined && data?.iframeMarkup == undefined"
+          [image]="data?.image?.path"
+          [caption]="data?.image?.caption"
+          [alternativeText]="data?.image?.alt"
+        ></app-image>
+      </div>
+    </div>
+  </div>
+</section>

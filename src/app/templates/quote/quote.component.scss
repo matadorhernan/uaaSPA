@@ -28,10 +28,10 @@ section {
     .quote {
       text-align: center;
       span {
-        line-height: 1.5em;
         position: relative;
 
-        font-size: 1.5em;
+        line-height: 1em;
+        font-size: 1.3em;
         font-weight: 500;
       }
     }
@@ -42,8 +42,10 @@ section {
       justify-content: center;
       align-items: center;
       font-weight: 500;
+      font-size: 1.3em;
 
       span:last-child {
+        margin-top: 10px;
         font-weight: normal;
       }
     }

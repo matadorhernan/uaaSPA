@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { information_es } from 'src/data/information';
+import { baseData_es } from 'src/data/es/baseData';
+
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-landing',
@@ -7,8 +9,7 @@ import { information_es } from 'src/data/information';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
-  public landing = information_es;
+  public readonly baseInfo = _.cloneDeep(baseData_es);
   constructor() {}
-
   ngOnInit(): void {}
 }
