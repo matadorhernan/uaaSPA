@@ -9,13 +9,14 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
+import { BulletSectionComponent } from './bullet-section/bullet-section.component';
+import { ImageBlockComponent } from './image-block/image-block.component';
 import { ImageQuoteComponent } from './image-quote/image-quote.component';
 
 import { ImageSectionComponent } from './image-section/image-section.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SectionComponent } from './section/section.component';
 import { SocialComponent } from './social/social.component';
-import { TextSectionComponent } from './text-section/text-section.component';
 
 @Component({
   selector: 'app-templates-resolver',
@@ -39,17 +40,20 @@ export class TemplatesResolverComponent implements AfterViewInit {
     if (data && data.sectionType && data.sectionType.length > 0) {
       this.container.clear();
       let factory: ComponentFactory<any>;
-      let section: any;
-
-      if (data.sectionType == 'image-section') section = ImageSectionComponent;
-      else if (data.sectionType == 'social-section') section = SocialComponent;
-      else if (data.sectionType == 'quote-section') section = QuoteComponent;
-      else if (data.sectionType == 'image-quote-section')
-        section = ImageQuoteComponent;
-      else if (data.sectionType == 'text-section')
-        section = TextSectionComponent;
-      else if (data.sectionType == 'basic-section') section = SectionComponent;
-
+      let section: any =
+        data.sectionType == 'image-section'
+          ? ImageSectionComponent
+          : data.sectionType == 'bullet-section'
+          ? BulletSectionComponent
+          : data.sectionType == 'social-section'
+          ? SocialComponent
+          : data.sectionType == 'image-block'
+          ? ImageBlockComponent
+          : data.sectionType == 'quote-section'
+          ? QuoteComponent
+          : data.sectionType == 'image-quote-section'
+          ? ImageQuoteComponent
+          : SectionComponent;
       factory = this.componentFactoryResolver.resolveComponentFactory(section);
       this.componentRef = this.container.createComponent(factory);
       this.componentRef.instance.data = data;

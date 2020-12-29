@@ -3,6 +3,9 @@ import { universityHistory_es } from './university/university-history';
 import { universityMotto_es } from './university/university-motto';
 import { universityHytm_es } from './university/university-hytm';
 import { universityLogo_es } from './university/university-logo';
+import { universityIdeals_es } from './university/university-ideals';
+import { universityMascot_es } from './university/university-mascot';
+import { universityGov_es } from './university/university-gov';
 export const baseData_es = {
   lang: 'es',
   university: {
@@ -108,6 +111,9 @@ export const baseData_es = {
               universityMotto_es,
               universityHytm_es,
               universityLogo_es,
+              universityIdeals_es,
+              universityMascot_es,
+              universityGov_es,
             ],
           },
           {

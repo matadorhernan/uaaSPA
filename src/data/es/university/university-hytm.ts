@@ -23,7 +23,7 @@ export const universityHytm_es = {
         'Se cantó por primera vez en la inauguración del Centro de Información en el año de 1976, ante la presencia del presidente de la República Mexicana, Luis Echeverría Álvarez, pero fue hasta el año siguiente en el mes de noviembre, cuando el Consejo Universitario, que por encargo del rector, contador público Humberto Martínez de León, le fue encomendado al etnomusicólogo Óscar Malo Flores, jefe del departamento de Promociones Culturales y maestro de música de la Universidad en aquel tiempo.',
     },
     {
-      sectionType: 'text-section',
+      sectionType: 'basic-section',
       text:
         'El autor, en la primera estrofa resalta el lema universitario y la complementa con la palabra Universitas (Universidad), que permite al compositor reflejar su idea musical. La estructura del himno es una perífrasis de lo que es “convertirse en luz”, basándose en los principios de libertad, justicia, igualdad y paz en beneficio de la humanidad por medio del trabajo cotidiano, dinámico y audaz.</br></br>La música da principio con una “Cuarta” (fado) para dar la sensación de lo INDÍGENA (caracoles marinos, Huéhuetl, Teponaztli, Chirimía), continúa con un “tono menor” que significa la lucha entre lo indígena y lo hispano y termina, la primera parte, con un “tono mayor” símbolo de una nueva nacionalidad.</br></br>La melodía es sencilla para que pueda ser cantada por todos, pero no menos rica armónicamente ya que juega con tonos relativos para la grandiosidad. Se termina reafirmando la primera estrofa.',
     },

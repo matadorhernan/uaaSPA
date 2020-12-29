@@ -15,14 +15,11 @@ export class UniversityInstitutionComponent implements OnInit {
 
   constructor(private readonly activatedRoute: ActivatedRoute) {
     this.localData = _.cloneDeep(baseData_es.root.pages[0].pages[0]);
-
     activatedRoute.params.subscribe((params) => {
       this.currentData = _.filter(this.localData.pages, (page) => {
         return _.last(page.path.split('/')) == params['page'];
       })[0];
     });
-
-    console.log(this.currentData);
   }
 
   ngOnInit(): void {}

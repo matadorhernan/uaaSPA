@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextSectionComponent } from './text-section.component';
+import { BulletSectionComponent } from './bullet-section.component';
 
-describe('TextSectionComponent', () => {
-  let component: TextSectionComponent;
-  let fixture: ComponentFixture<TextSectionComponent>;
+describe('BulletSectionComponent', () => {
+  let component: BulletSectionComponent;
+  let fixture: ComponentFixture<BulletSectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TextSectionComponent ]
+      declarations: [ BulletSectionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TextSectionComponent);
+    fixture = TestBed.createComponent(BulletSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

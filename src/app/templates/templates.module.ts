@@ -18,8 +18,8 @@ import { ArticleHeaderComponent } from './article-header/article-header.componen
 import { ImageBlockComponent } from './image-block/image-block.component';
 import { SanitizeHtmlPipe } from '../pipes/sanitize-html.pipe';
 import { ImageSectionComponent } from './image-section/image-section.component';
-import { TextSectionComponent } from './text-section/text-section.component';
 import { TemplatesResolverComponent } from './templates-resolver.component';
+import { BulletSectionComponent } from './bullet-section/bullet-section.component';
 
 @NgModule({
   declarations: [
@@ -38,27 +38,10 @@ import { TemplatesResolverComponent } from './templates-resolver.component';
     ImageBlockComponent,
     SanitizeHtmlPipe,
     ImageSectionComponent,
-    TextSectionComponent,
     TemplatesResolverComponent,
+    BulletSectionComponent,
   ],
-  exports: [
-    HeaderComponent,
-    SectionComponent,
-    CardGridComponent,
-    SliderComponent,
-    EventsComponent,
-    QuoteComponent,
-    SocialComponent,
-    ParallaxSectionComponent,
-    TimelineComponent,
-    ImageQuoteComponent,
-    FeaturingJumbotronComponent,
-    ArticleHeaderComponent,
-    ImageBlockComponent,
-    ImageSectionComponent,
-    TextSectionComponent,
-    TemplatesResolverComponent,
-  ],
+  exports: [HeaderComponent, CardGridComponent, TemplatesResolverComponent],
   imports: [CommonModule, ComponentsModule, NgbModule],
 })
 export class TemplatesModule {}

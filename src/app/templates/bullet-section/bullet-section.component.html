@@ -11,17 +11,13 @@
       [title]="data?.titleHead.title"
       [label]="data?.titleHead.label"
     ></app-title-head>
-    <p [innerHTML]="data?.text"></p>
-    <a
-      *ngIf="data?.button != undefined"
-      [href]="data?.button.path"
-      class="btn btn-outline-primary mb-lg-0 mb-5"
-      type="button"
-    >
-      <div>
-        <span>{{ data?.button.text }}</span>
-        <i class="material-icons">chevron_right</i>
-      </div>
-    </a>
+    <ul>
+      <li *ngFor="let item of data?.list">
+        <img src="/assets/flama.svg" alt="" />
+        <div>
+          {{ item }}
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
