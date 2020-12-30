@@ -41,7 +41,12 @@ import { BulletSectionComponent } from './bullet-section/bullet-section.componen
     TemplatesResolverComponent,
     BulletSectionComponent,
   ],
-  exports: [HeaderComponent, CardGridComponent, TemplatesResolverComponent],
+  exports: [
+    HeaderComponent,
+    CardGridComponent,
+    TemplatesResolverComponent,
+    TimelineComponent,
+  ],
   imports: [CommonModule, ComponentsModule, NgbModule],
 })
 export class TemplatesModule {}

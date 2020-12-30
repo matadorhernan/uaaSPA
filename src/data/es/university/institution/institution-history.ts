@@ -1,4 +1,4 @@
-export const universityHistory_es = {
+export const institutionHistory_es = {
   title: 'Historia',
   subtitle: 'Nuestra Historia',
   notExternal: true,
@@ -153,6 +153,329 @@ export const universityHistory_es = {
       },
       text:
         'El primer Estatuto de la Ley Orgánica fue aprobado en sesión extraordinaria permanente del Consejo Directivo en funciones de Universitario, celebrada del 25 de septiembre al 9 de octubre de 1974, y aprobado en definitiva y solemnemente en sesión del 25 de octubre del mismo año. El nuevo ordenamiento legal derogó al Estatuto de la Ley Orgánica del IACT, de fecha 12 de octubre de 1965. La comisión de estilo estuvo integrada por los licenciados Carlos González Rueda, Manuel Varela Quezada, José Luis Serna Valdivia y Guillermo Ballesteros Guerra.',
+    },
+    {
+      sectionType: 'timeline-section',
+      text:
+        'Cronologia de Eventos de la Intitucion, en esta seccion se puede apreciar de una manera ordenada el desarrollo a lo largo del tiempo de nuestra institucion. Del mismo modo los rectores y otros eventos documentados en el archivo de la UAA son mencionados en este cronigrama.',
+      titleHead: {
+        label: 'Cronograma',
+        title: 'Linea de Tiempo',
+      },
+      list: [
+        {
+          title: '1887',
+          list: ['Apertura del Bachillerato', 'Apertura de la Secundaria'],
+        },
+        {
+          title: '1968',
+          list: [
+            'Apertura de la carrera de Administración de Empresas',
+            'Apertura de la carrera de Contador Público',
+          ],
+        },
+        {
+          title: '1972',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2017/06/Mtz-de-Leon.jpg',
+            alt: 'C.P. Humberto Martínez de León',
+            caption: 'C.P. Humberto Martínez de León, Rector durante 1972-1977',
+          },
+          list: [
+            '<b>C.P. Humberto Martínez de León</b>, Inicia como último rector del IACT y primero de la UAA (1972-1977)',
+            'Apertura de la carrera de Médico Cirujano',
+          ],
+        },
+        {
+          title: '1973',
+          list: [
+            'Apertura de la carrera de Ingeniería en Agronomía',
+            'Apertura de la carrera de Medicina Veterinaria y Zootecnia',
+            'Apertura de la carrera de Médico Estomatólogo',
+          ],
+        },
+        {
+          title: '1974',
+          list: [
+            'Apertura de la carrera de Arquitectura',
+            'Apertura de la carrera de Biología',
+            'Apertura de la carrera de Ingeniería Civil',
+          ],
+        },
+        {
+          title: '1976',
+          list: ['Apertura de la carrera de Sociología'],
+        },
+        {
+          title: '1978',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2017/06/Perez-Romo.jpg',
+            alt: 'Dr. Alfonso Pérez Romo',
+            caption: 'Dr. Alfonso Pérez Romo, Rector durante 1978-1980',
+          },
+          list: [
+            '<b>Dr. Alfonso Pérez Romo</b> inicia como rector de la UAA durante el periodo 1978-1980',
+            'Apertura de la carrera de Asesoría Psicopedagógica',
+          ],
+        },
+        {
+          title: '1979',
+          list: [
+            'Apertura de la carrera de Derecho',
+            'Apertura de la Licenciatura en Optometría',
+            'Apertura de la carrera de Salud Pública',
+          ],
+        },
+        {
+          title: '1980',
+          list: [
+            'Apertura de la carrera de Administración Financiera',
+            'Apertura de la carrera de Bioquímica',
+            'Apertura de la carrera de Urbanismo',
+          ],
+        },
+        {
+          title: '1981',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2017/06/Ramirez-Isunza.jpg',
+            alt: 'Dr. José Manuel Ramírez Isunza',
+            caption: 'Dr. José Manuel Ramírez Isunza, Rector durante 1981-1983',
+          },
+          list: [
+            '<b>Dr. José Manuel Ramírez Isunza</b> inicia como rector de la UAA durante el periodo 1981-1983',
+          ],
+        },
+        {
+          title: '1982',
+          list: [
+            'Apertura de la carrera de Relaciones Industriales',
+            'Apertura de la carrera de Sistemas Computacionales',
+          ],
+        },
+        {
+          title: '1983',
+          list: [
+            'Apertura de la carrera de Comunicación Organizacional',
+            'Apertura de la carrera de Medios Masivos de Comunicación (Hoy Comunicación e Información)',
+          ],
+        },
+        {
+          title: '1984',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2017/06/Glz-Cuellar.jpg',
+            alt: 'Lic. Efrén González Cuéllar',
+            caption: 'Lic. Efrén González Cuéllar, Rector durante 1984-1989',
+          },
+          list: [
+            '<b>Lic. Efrén González Cuéllar</b> inicia como rector de la UAA durante el periodo 1984-1989',
+          ],
+        },
+        {
+          title: '1985',
+          list: ['Apertura de la carrera de Economía'],
+        },
+        {
+          title: '1986',
+          list: [
+            'Apertura de la carrera de Administración Turística (Hoy Gestión Turística)',
+            'Apertura de la carrera de Informática (Hoy Tecnologías de Información)',
+            'Apertura de la carrera de Letras Hispánicas',
+            'Apertura de la carrera de Matemáticas Aplicadas',
+          ],
+        },
+        {
+          title: '1987',
+          list: [
+            'Apertura de la carrera de Trabajo Social (inicia como carrera técnica en 1963)',
+          ],
+        },
+        {
+          title: '1988',
+          list: [
+            'Apertura de la carrera de Análisis Químico Biológicos',
+            'Apertura de la carrera de Historia',
+            'Apertura de la carrera de Ingeniería Agroindustrial',
+          ],
+        },
+        {
+          title: '1990',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2017/06/Glz-Hernandez.jpg',
+            alt: 'Ing. Gonzalo González Hernández',
+            caption:
+              'Ing. Gonzalo González Hernández, Rector durante 1990-1995',
+          },
+          list: [
+            '<b>Ing. Gonzalo González Hernández</b> inicia como rector de la UAA durante el periodo 1990-1995',
+          ],
+        },
+        {
+          title: '1991',
+          list: ['Apertura de la carrera de Psicología'],
+        },
+        {
+          title: '1992',
+          list: ['Apertura de la carrera de Filosofía'],
+        },
+        {
+          title: '1993',
+          list: [
+            'Apertura de la carrera de Diseño Textil y de la Confección (Hoy Diseño de Modas en Indumentaria y Textiles',
+            'Apertura de la carrera de Enseñanza del Inglés (Hoy Docencia del Idioma Inglés)',
+          ],
+        },
+        {
+          title: '1994',
+          list: [
+            'Apertura de la carrera de Diseño Gráfico',
+            'Apertura de la carrera de Diseño Industrial',
+            'Apertura de la carrera de Mercadotecnia',
+          ],
+        },
+        {
+          title: '1995',
+          list: [
+            'Apertura de la carrera de Ciencias Políticas y Administración Pública',
+            'Apertura de la carrera de Electrónica y Sistemas de Comunicación Digital (Hoy Ingeniería en Electrónica)',
+          ],
+        },
+        {
+          title: '1996',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Mtz-Rizo.jpg',
+            alt: 'Lic. Felipe Martínez Rizo',
+            caption: 'Lic. Felipe Martínez Rizo, Rector durante 1996-1998',
+          },
+          list: [
+            '<b>Lic. Felipe Martínez Rizo</b> inicia como rector de la UAA durante el periodo 1996-1998',
+          ],
+        },
+        {
+          title: '1998',
+          list: [
+            'Apertura de la Licenciatura en Enfermería (inicia como carrera técnica en 1962)',
+          ],
+        },
+        {
+          title: '1999',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Avila-Storer.jpg',
+            alt: 'Dr. Antonio Ávila Storer',
+            caption: 'Dr. Antonio Ávila Storer, Rector durante 1999-2004',
+          },
+          list: [
+            '<b>Dr. Antonio Ávila Storer</b> inicia como rector de la UAA durante el periodo 1999-2004',
+          ],
+        },
+        {
+          title: '2003',
+          list: [
+            'Apertura de la carrera de Ciencias Ambientales',
+            'Apertura de la carrera de Diseño de Interiores',
+            'Apertura de la carrera de Ingeniero Industrial Estadístico',
+            'Apertura de la Licenciatura en Nutrición',
+          ],
+        },
+        {
+          title: '2005',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Urzua-Macias.jpg',
+            alt: 'M. en C. Rafael Urzúa Macías',
+            caption: 'M. en C. Rafael Urzúa Macías, Rector durante 2005-2010',
+          },
+          list: [
+            '<b>M. en C. Rafael Urzúa Macías</b> inicia como rector de la UAA durante el periodo 2005-2010',
+          ],
+        },
+        {
+          title: '2006',
+          list: [
+            'Apertura de la carrera de Ciencias del Arte y Gestión Cultural',
+          ],
+        },
+        {
+          title: '2007',
+          list: [
+            'Apertura de la Licenciatura en Terapia Física (inicia como carrera técnica en 2005)',
+          ],
+        },
+        {
+          title: '2008',
+          list: [
+            'Apertura de la carrera de Administración de la Producción y Servicios',
+            'Apertura de la Licenciatura en Cultura Física y Deporte',
+          ],
+        },
+        {
+          title: '2009',
+          list: ['Música'],
+        },
+        {
+          title: '2010',
+          list: [
+            'Apertura de la carrera de Artes Escénicas: Actuación',
+            'Apertura de la carrera de Biotecnología',
+            'Apertura de la carrera de Computación Inteligente',
+          ],
+        },
+        {
+          title: '2011',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Andrade-Cervantes.jpg',
+            alt: 'M. en Admón. Mario Andrade Cervantes',
+            caption:
+              'M. en Admón. Mario Andrade Cervantes, Rector durante 2011-2016',
+          },
+          list: [
+            '<b>M. en Admón. Mario Andrade Cervantes</b> inicia como rector de la UAA durante el periodo 2011-2016',
+            'Apertura de la carrera de Comercio Internacional',
+            'Apertura de la carrera de Docencia del Francés y Español como Lenguas Extranjeras',
+          ],
+        },
+        {
+          title: '2012',
+          list: [
+            'Apertura de la Ingeniería Automotriz',
+            'Apertura de la Ingeniería Biomédica',
+            'Apertura de la Ingeniería en Robótica',
+            'Apertura de la Licenciatura en Agronegocios',
+            'Apertura de la Licenciatura en Comercio Electrónico',
+          ],
+        },
+        {
+          title: '2013',
+          list: [
+            'Apertura de la Artes Cinematográficas y Audiovisuales',
+            'Apertura de la Ingeniería en Diseño Mecánico',
+            'Apertura de la Ingeniería en Energías renovables',
+            'Apertura de la Ingeniería en Manufactura y Automatización industrial',
+            'Apertura de la Licenciatura en Administración y Gestión Fiscal de PYMES',
+            'Apertura de la Licenciatura en Logística Empresarial',
+          ],
+        },
+        {
+          title: '2017',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Dr-Fco-Javier-Avelar-Glz-Foto-Oficial-1.jpg',
+            alt: 'Dr. Francisco Javier Avelar González',
+            caption:
+              'Dr. Francisco Javier Avelar González, Rector durante 2017-',
+          },
+          list: [
+            '<b>Dr. Francisco Javier Avelar González</b> inicia como rector de la UAA durante el periodo 2017-',
+          ],
+        },
+      ],
     },
   ],
 };

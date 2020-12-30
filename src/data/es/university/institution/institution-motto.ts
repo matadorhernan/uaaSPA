@@ -1,4 +1,4 @@
-export const universityMotto_es = {
+export const institutionMotto_es = {
   title: 'Lema',
   subtitle: 'Nuestro Lema',
   notExternal: true,

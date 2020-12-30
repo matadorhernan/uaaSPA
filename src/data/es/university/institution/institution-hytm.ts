@@ -1,4 +1,4 @@
-export const universityHytm_es = {
+export const institutionHytm_es = {
   title: 'Himno',
   subtitle: 'Nuestro Himno',
   notExternal: true,

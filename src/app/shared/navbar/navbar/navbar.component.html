@@ -2,7 +2,7 @@
   <button class="btn btn-default search menu-item">
     <i class="material-icons text-white"> search </i>
   </button>
-  <div class="brand">
+  <div class="brand" [routerLink]="['/']">
     <img src="/assets/brand.svg" alt="" />
   </div>
   <button
@@ -17,7 +17,7 @@
 
 <div class="d-sm-block d-none">
   <nav class="navbar">
-    <div class="brand">
+    <div class="brand" [routerLink]="['/']">
       <app-brand></app-brand>
     </div>
     <div class="wrapper">
@@ -53,13 +53,24 @@
                           class="col-6"
                           *ngFor="let chunk of getChunk(page.pages)"
                         >
-                          <a
-                            class="dropdown-item"
-                            *ngFor="let item of chunk"
-                            [routerLink]="item.path"
-                          >
-                            {{ item.title }}
-                          </a>
+                          <div *ngFor="let item of chunk">
+                            <a
+                              *ngIf="item.notExternal"
+                              class="dropdown-item"
+                              [routerLink]="item.path"
+                            >
+                              {{ item.title }}
+                            </a>
+                            <a
+                              *ngIf="!item.notExternal"
+                              class="dropdown-item"
+                              [href]="item.path"
+                              target="_blank"
+                            >
+                              {{ item.title }}
+                              <i class="material-icons">launch</i>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>

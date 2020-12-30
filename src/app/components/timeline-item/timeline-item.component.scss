@@ -4,6 +4,7 @@
   .left {
     padding: 30px;
     padding-left: 0;
+    margin-bottom: 10px;
   }
 
   .right {
@@ -12,6 +13,7 @@
       margin-left: 20px;
       line-height: 20px;
       color: #1086ff;
+      margin-bottom: 30px;
 
       font-weight: 500;
       &::before {
@@ -32,7 +34,7 @@
       text-decoration: none;
       list-style: none;
 
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
 
     .dashes {

@@ -1,10 +1,12 @@
 <div class="wrapper row pl-3">
   <div class="left col-lg-6 col-md-12 d-none d-md-block">
-    <app-image
-      [image]="image"
-      [caption]="caption"
-      [alternativeText]="alternativeText"
-    ></app-image>
+    <div class="image" *ngIf="image != undefined">
+      <app-image
+        [image]="image?.path"
+        [caption]="image?.caption"
+        [alternativeText]="image?.alternativeText"
+      ></app-image>
+    </div>
   </div>
   <div class="right col-lg-6 col-md-12">
     <div class="dashes"></div>

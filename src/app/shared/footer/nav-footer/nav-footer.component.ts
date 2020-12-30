@@ -1,4 +1,4 @@
-import { baseData_es } from 'src/data/es/baseData';
+import { local_es } from 'src/data/es/local';
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 
@@ -8,7 +8,7 @@ import * as _ from 'lodash';
   styleUrls: ['./nav-footer.component.scss'],
 })
 export class NavFooterComponent implements OnInit {
-  public pages = baseData_es.root.pages;
+  public pages = local_es.root.pages;
 
   constructor() {}
 

@@ -1,7 +1,7 @@
 <div class="card py-3">
-  <div class="card-body">
+  <div class="card-body text-center">
     <a
-      *ngIf="title != undefined"
+      *ngIf="title != undefined && notExternal"
       [routerLink]="['/' + path]"
       class="btn btn-default mb-0"
       type="button"
@@ -9,6 +9,18 @@
       <div>
         {{ title }}
         <i class="material-icons">chevron_right</i>
+      </div>
+    </a>
+    <a
+      *ngIf="title != undefined && !notExternal"
+      [href]="path"
+      target="_blank"
+      class="btn btn-default mb-0"
+      type="button"
+    >
+      <div>
+        {{ title }}
+        <i class="material-icons">launch</i>
       </div>
     </a>
     <p class="card-text">{{ subtitle }}</p>

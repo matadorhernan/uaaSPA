@@ -1,4 +1,4 @@
-export const universityMascot_es = {
+export const institutionMascot_es = {
   title: 'Mascota',
   subtitle: 'Nuestra Mascota',
   notExternal: true,

@@ -1,4 +1,4 @@
-export const universityIdeals_es = {
+export const institutionIdeals_es = {
   title: 'Ideario',
   subtitle: 'Nuestro Ideario',
   notExternal: true,

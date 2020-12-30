@@ -1,4 +1,4 @@
-export const universityLogo_es = {
+export const institutionLogo_es = {
   title: 'Logotipo',
   subtitle: 'Nuestro Logotipo',
   notExternal: true,

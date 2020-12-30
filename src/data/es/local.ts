@@ -1,12 +1,9 @@
 import { landing_es } from './landing';
-import { universityHistory_es } from './university/university-history';
-import { universityMotto_es } from './university/university-motto';
-import { universityHytm_es } from './university/university-hytm';
-import { universityLogo_es } from './university/university-logo';
-import { universityIdeals_es } from './university/university-ideals';
-import { universityMascot_es } from './university/university-mascot';
-import { universityGov_es } from './university/university-gov';
-export const baseData_es = {
+import { institution_es } from './university/institution';
+import { leadership_es } from './university/leadership';
+import { administration_es } from './university/administration';
+
+export const local_es = {
   lang: 'es',
   university: {
     title: 'Universidad Autónoma de Aguascalientes',
@@ -99,39 +96,14 @@ export const baseData_es = {
             '¿Te interesa conocer más sobre la UAA? Encuentra información sobre nosotros y nuestra historia. ¿Tienes alguna duda o algo que quieras decirnos? ¡Háznoslo saber!',
         },
         pages: [
+          institution_es,
+          leadership_es,
           {
-            notExternal: true,
-            title: 'Institución',
-            subtitle: 'En esta seccion',
-            path: 'universidad/institucion/historia',
-            text:
-              'Conoce mas acerca de la Universidad en los siguientes apartados de esta seccion.',
-            pages: [
-              universityHistory_es,
-              universityMotto_es,
-              universityHytm_es,
-              universityLogo_es,
-              universityIdeals_es,
-              universityMascot_es,
-              universityGov_es,
-            ],
-          },
-          {
-            title: 'Rectoría',
-            notExternal: true,
-            path: 'https://www.uaa.mx/portal/nuestra-universidad/rectoria/',
-          },
-          {
+            notExternal: false,
             title: 'Secretaría General',
-            notExternal: true,
             path: 'https://www.uaa.mx/sg/',
           },
-          {
-            title: 'Direcciones Generales',
-            notExternal: true,
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/direcciones-generales/',
-          },
+          administration_es,
           {
             title: 'Centros Académicos',
             notExternal: true,

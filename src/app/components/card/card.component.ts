@@ -9,6 +9,7 @@ export class CardComponent implements OnInit {
   @Input('title') title: string;
   @Input('subtitle') subtitle: string;
   @Input('path') path: string;
+  @Input('notExternal') notExternal: boolean;
 
   constructor() {}
 

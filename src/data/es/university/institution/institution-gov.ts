@@ -1,4 +1,4 @@
-export const universityGov_es = {
+export const institutionGov_es = {
   title: 'Gobierno',
   subtitle: 'Nuestra Estructura',
   notExternal: true,

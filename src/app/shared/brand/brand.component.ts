@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { baseData_es } from 'src/data/es/baseData';
+import { local_es } from 'src/data/es/local';
 
 @Component({
   selector: 'app-brand',
@@ -7,7 +7,7 @@ import { baseData_es } from 'src/data/es/baseData';
   styleUrls: ['./brand.component.scss'],
 })
 export class BrandComponent implements OnInit {
-  public university = baseData_es.university;
+  public university = local_es.university;
   constructor() {}
 
   ngOnInit(): void {}

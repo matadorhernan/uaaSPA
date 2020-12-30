@@ -17,6 +17,7 @@ import { ImageSectionComponent } from './image-section/image-section.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SectionComponent } from './section/section.component';
 import { SocialComponent } from './social/social.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @Component({
   selector: 'app-templates-resolver',
@@ -53,6 +54,8 @@ export class TemplatesResolverComponent implements AfterViewInit {
           ? QuoteComponent
           : data.sectionType == 'image-quote-section'
           ? ImageQuoteComponent
+          : data.sectionType == 'timeline-section'
+          ? TimelineComponent
           : SectionComponent;
       factory = this.componentFactoryResolver.resolveComponentFactory(section);
       this.componentRef = this.container.createComponent(factory);

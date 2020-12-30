@@ -1,35 +1,26 @@
 <section>
-  <div class="container py-5">
-    <app-title-head></app-title-head>
-    <p class="my-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente suscipit
-      iste quod exercitationem labore enim, adipisci odio, ex nemo quia
-      voluptatibus veritatis in repudiandae mollitia amet! Eligendi, maxime eos
-      fugiat fuga eveniet eum, ratione labore atque veniam assumenda repudiandae
-      delectus blanditiis fugit, accusantium earum vitae. Voluptatibus quo
-      repellat culpa ratione quos at eius cum autem similique harum dolores est
-      vel, provident ipsum qui aspernatur. Sunt quis assumenda reprehenderit
-      facilis, molestias adipisci eum ullam suscipit magnam molestiae, fugit
-      corporis quae illum dolores! Pariatur excepturi sit quo. Animi inventore
-      veritatis, deserunt voluptatem ratione placeat nobis explicabo unde
-      repellendus quo eum. Labore quibusdam eum aperiam ullam cum fuga
-      consequuntur beatae. Id veniam, ut sed debitis doloremque doloribus
-      numquam ipsum beatae molestiae exercitationem omnis cumque, autem
-      obcaecati architecto ipsam minima facilis aspernatur incidunt possimus,
-      voluptates amet ratione et voluptate! Dolore iusto blanditiis quam vel
-      necessitatibus consectetur quas libero natus, ab dolores, ex fuga error
-      cumque alias laudantium! Autem aut officia non aliquid libero soluta
-      necessitatibus animi, reiciendis unde, distinctio iusto aperiam provident,
-      quas dolorem voluptas laboriosam explicabo voluptatum dolorum doloremque
-      magni impedit. Facere dolore repellat adipisci, sit vel laboriosam
-      ducimus. Ipsum eaque eum officiis et dicta nobis mollitia magnam tempore.
-      Praesentium molestias quisquam blanditiis.
-    </p>
-    <app-timeline-item></app-timeline-item>
-    <app-timeline-item></app-timeline-item>
-    <app-timeline-item></app-timeline-item>
-    <app-timeline-item></app-timeline-item>
-    <app-timeline-item></app-timeline-item>
-    <app-timeline-item></app-timeline-item>
+  <div
+    class="container"
+    [ngClass]="{
+      'pt-3': data?.titleHead == undefined,
+      'pt-5': data?.titleHead != undefined
+    }"
+  >
+    <div class="text-center">
+      <app-title-head
+        *ngIf="data?.titleHead != undefined"
+        [title]="data?.titleHead.title"
+        [label]="data?.titleHead.label"
+        [position]="'center'"
+      ></app-title-head>
+      <p class="mt-3 mb-5" [innerHTML]="data?.text"></p>
+    </div>
+    <app-timeline-item
+      *ngFor="let item of data?.list"
+      [image]="item.image"
+      [title]="item.title"
+      [list]="item.list"
+    >
+    </app-timeline-item>
   </div>
 </section>
