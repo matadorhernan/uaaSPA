@@ -2,6 +2,7 @@ import { landing_es } from './landing';
 import { institution_es } from './university/institution';
 import { leadership_es } from './university/leadership';
 import { administration_es } from './university/administration';
+import { centers_es } from './university/centers';
 
 export const local_es = {
   lang: 'es',
@@ -104,12 +105,7 @@ export const local_es = {
             path: 'https://www.uaa.mx/sg/',
           },
           administration_es,
-          {
-            title: 'Centros Académicos',
-            notExternal: true,
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/',
-          },
+          centers_es,
           {
             title: 'Plan de Desarrollo',
             notExternal: true,

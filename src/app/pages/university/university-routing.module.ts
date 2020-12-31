@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UniversityInstitutionComponent } from './university-institution/university-institution.component';
 import { UniversityLeadershipComponent } from './university-leadership/university-leadership.component';
 import { UniversityAdministrationComponent } from './university-administration/university-administration.component';
+import { UniversityCentersComponent } from './university-centers/university-centers.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'direcciones',
     component: UniversityAdministrationComponent,
+  },
+  {
+    path: 'centros',
+    component: UniversityCentersComponent,
   },
 ];
 @NgModule({
