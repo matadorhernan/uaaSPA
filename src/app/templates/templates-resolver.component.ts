@@ -10,6 +10,7 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { BulletSectionComponent } from './bullet-section/bullet-section.component';
+import { CardColumnsComponent } from './card-columns/card-columns.component';
 import { ImageBlockComponent } from './image-block/image-block.component';
 import { ImageQuoteComponent } from './image-quote/image-quote.component';
 
@@ -56,6 +57,8 @@ export class TemplatesResolverComponent implements AfterViewInit {
           ? ImageQuoteComponent
           : data.sectionType == 'timeline-section'
           ? TimelineComponent
+          : data.sectionType == 'card-columns'
+          ? CardColumnsComponent
           : SectionComponent;
       factory = this.componentFactoryResolver.resolveComponentFactory(section);
       this.componentRef = this.container.createComponent(factory);

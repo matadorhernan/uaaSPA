@@ -1,0 +1,23 @@
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <app-title-head
+        [position]="'center'"
+        [title]="data?.titleHead.title"
+        [label]="data?.titleHead.label"
+      ></app-title-head>
+      <p class="my-5" [innerHTML]="data?.text"></p>
+    </div>
+  </div>
+  <div class="card-columns">
+    <app-image-card
+      *ngFor="let item of data?.list"
+      [image]="item.image"
+      [badges]="item.badges"
+      [title]="item.title"
+      [label]="item.label"
+      [text]="item.text"
+      [button]="item.button"
+    ></app-image-card>
+  </div>
+</div>

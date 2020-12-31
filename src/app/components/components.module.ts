@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import { TimelineItemComponent } from './timeline-item/timeline-item.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { RouterModule } from '@angular/router';
+import { ImageCardComponent } from './image-card/image-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { RouterModule } from '@angular/router';
     ImageComponent,
     TimelineItemComponent,
     UserItemComponent,
+    ImageCardComponent,
   ],
   exports: [
     TitleHeadComponent,
@@ -28,6 +30,7 @@ import { RouterModule } from '@angular/router';
     ImageComponent,
     TimelineItemComponent,
     UserItemComponent,
+    ImageCardComponent,
   ],
   imports: [CommonModule, RouterModule],
 })

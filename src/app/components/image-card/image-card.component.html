@@ -1,0 +1,45 @@
+<div class="card">
+  <app-image
+    *ngIf="image != undefined"
+    [image]="image?.path"
+    [alternativeText]="image?.alt"
+  ></app-image>
+  <div class="card-body px-0 py-1">
+    <h2 class="card-title mb-1">{{ title }}</h2>
+    <div class="badge-wrapper">
+      <img *ngIf="badges?.ciees" src="/assets/ciees.png" alt="ciees logo" />
+      <img
+        *ngIf="badges?.english"
+        src="/assets/english.png"
+        alt="english logo"
+      />
+      <label class="mb-3 text-primary">{{ label }}</label>
+    </div>
+    <p class="card-text mb-3">
+      {{ text }}
+    </p>
+    <a
+      *ngIf="button?.path != undefined && button?.notExternal"
+      [routerLink]="['/' + button?.path]"
+      class="mb-5"
+      type="button"
+    >
+      <div>
+        {{ button?.text }}
+        <i class="material-icons">chevron_right</i>
+      </div>
+    </a>
+    <a
+      *ngIf="button?.path != undefined && !button?.notExternal"
+      [href]="button?.path"
+      target="_blank"
+      class="mb-5"
+      type="button"
+    >
+      <div>
+        {{ button?.text }}
+        <i class="material-icons">launch</i>
+      </div>
+    </a>
+  </div>
+</div>

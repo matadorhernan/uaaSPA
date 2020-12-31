@@ -10,13 +10,16 @@
         <div class="navbar-drop">
           <li
             class="menu-item"
-            (click)="openSubMenu('quick')"
-            [ngClass]="{ activated: isQuickActive }"
+            (click)="openSubMenu(navbar.quickLinks)"
+            [ngClass]="{ activated: !navbar.quickLinks.collapsed }"
           >
             <span>{{ navbar.quickLinks.title }}</span>
             <i class="material-icons">keyboard_arrow_down</i>
           </li>
-          <ul class="sub-menu" [ngClass]="{ activated: isQuickActive }">
+          <ul
+            class="sub-menu"
+            [ngClass]="{ activated: !navbar.quickLinks.collapsed }"
+          >
             <li class="sub-item" *ngFor="let item of navbar.quickLinks.pages">
               <i class="material-icons mr-2">sort</i>
               <a [href]="item.path">
@@ -26,17 +29,17 @@
           </ul>
         </div>
 
-        <div class="navbar-drop" *ngFor="let item of navbar.pages">
+        <div class="navbar-drop" *ngFor="let page of navbar.pages">
           <li
             class="menu-item"
-            (click)="openSubMenu('university')"
-            [ngClass]="{ activated: isUniversityActive && item.title == '' }"
+            (click)="openSubMenu(page)"
+            [ngClass]="{ activated: !page.collapsed && page.title == '' }"
           >
-            <span>{{ item.title }}</span>
+            <span>{{ page.title }}</span>
             <i class="material-icons">keyboard_arrow_down</i>
           </li>
-          <ul class="sub-menu" [ngClass]="{ activated: isUniversityActive }">
-            <li class="sub-item" *ngFor="let subItem of item.pages">
+          <ul class="sub-menu" [ngClass]="{ activated: !page.collapsed }">
+            <li class="sub-item" *ngFor="let subItem of page.pages">
               <i class="material-icons mr-2">sort</i>
               <a [href]="subItem.path">
                 {{ subItem.title | titlecase }}

@@ -45,6 +45,7 @@ export const local_es = {
   root: {
     landing: landing_es,
     quickLinks: {
+      collapsed: true,
       title: 'Menu Rapido',
       pages: [
         {
@@ -87,6 +88,7 @@ export const local_es = {
     },
     pages: [
       {
+        collapsed: true,
         notExternal: true,
         title: 'Universidad',
         image: {
@@ -143,6 +145,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Admisiones',
         image: {
           path:
@@ -185,6 +188,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Oferta Educativa',
         image: {
           path:
@@ -235,6 +239,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Internacional',
         image: {
           path:
@@ -277,6 +282,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Investigación',
         image: {
           path:
@@ -313,6 +319,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Egresados',
         image: {
           path:
@@ -348,6 +355,7 @@ export const local_es = {
         ],
       },
       {
+        collapsed: true,
         title: 'Comunicación',
         image: {
           path:

@@ -20,6 +20,7 @@ import { SanitizeHtmlPipe } from '../pipes/sanitize-html.pipe';
 import { ImageSectionComponent } from './image-section/image-section.component';
 import { TemplatesResolverComponent } from './templates-resolver.component';
 import { BulletSectionComponent } from './bullet-section/bullet-section.component';
+import { CardColumnsComponent } from './card-columns/card-columns.component';
 
 @NgModule({
   declarations: [
@@ -40,12 +41,13 @@ import { BulletSectionComponent } from './bullet-section/bullet-section.componen
     ImageSectionComponent,
     TemplatesResolverComponent,
     BulletSectionComponent,
+    CardColumnsComponent,
   ],
   exports: [
     HeaderComponent,
     CardGridComponent,
+    CardColumnsComponent,
     TemplatesResolverComponent,
-    TimelineComponent,
   ],
   imports: [CommonModule, ComponentsModule, NgbModule],
 })
