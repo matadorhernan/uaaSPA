@@ -2,7 +2,7 @@ export const centerArt_es = {
   notExternal: true,
   title: 'Artes y la Cultura',
   subtitle: 'Centro Académico',
-  path: 'universidad/centros',
+  path: 'universidad/centros/artes',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',
   image: {

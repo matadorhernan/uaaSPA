@@ -2,7 +2,7 @@ export const centerEngineering_es = {
   notExternal: true,
   title: 'Ciencias de la Ingeniería',
   subtitle: 'Centro Académico',
-  path: 'universidad/centros',
+  path: 'universidad/centros/ingeniería',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',
   image: {

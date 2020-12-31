@@ -2,7 +2,7 @@ export const juniorHigh_es = {
   notExternal: true,
   title: 'Educación Media',
   subtitle: 'Centro Académico',
-  path: 'universidad/centros',
+  path: 'universidad/centros/media',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',
   image: {

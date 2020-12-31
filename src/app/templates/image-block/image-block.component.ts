@@ -13,6 +13,7 @@ import {
 })
 export class ImageBlockComponent implements AfterViewInit {
   @ViewChild('image', { static: false }) image?: ElementRef;
+  @ViewChild('background', { static: false }) background?: ElementRef;
   @Input('data') data: any;
 
   constructor() {
@@ -20,7 +21,9 @@ export class ImageBlockComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    if (this.data.image != undefined)
+    if (this.data.image != undefined) {
       this.image.nativeElement.style.backgroundImage = `url(${this.data.image.path})`;
+      this.background.nativeElement.style.backgroundImage = `url(${this.data.image.path})`;
+    }
   }
 }

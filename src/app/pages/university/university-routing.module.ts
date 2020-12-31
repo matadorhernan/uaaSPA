@@ -4,6 +4,7 @@ import { UniversityInstitutionComponent } from './university-institution/univers
 import { UniversityLeadershipComponent } from './university-leadership/university-leadership.component';
 import { UniversityAdministrationComponent } from './university-administration/university-administration.component';
 import { UniversityCentersComponent } from './university-centers/university-centers.component';
+import { UniversityCentersDetailsComponent } from './university-centers/university-centers-details/university-centers-details.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,18 @@ const routes: Routes = [
   {
     path: 'centros',
     component: UniversityCentersComponent,
+  },
+  {
+    path: 'centros/agropecuarias',
+    redirectTo: 'centros/agropecuarias/presentacion',
+  },
+  {
+    path: 'centros/artes',
+    redirectTo: 'centros/artes/presentacion',
+  },
+  {
+    path: 'centros/:page/:details',
+    component: UniversityCentersDetailsComponent,
   },
 ];
 @NgModule({

@@ -2,7 +2,7 @@ export const socialCenter_es = {
   notExternal: true,
   title: 'Ciencias Sociales y Humanidades',
   subtitle: 'Centro Académico',
-  path: 'universidad/centros',
+  path: 'universidad/centros/sociales',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',
   image: {

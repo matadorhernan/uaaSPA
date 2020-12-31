@@ -7,6 +7,7 @@ import { UniversityInstitutionComponent } from './university-institution/univers
 import { UniversityLeadershipComponent } from './university-leadership/university-leadership.component';
 import { UniversityAdministrationComponent } from './university-administration/university-administration.component';
 import { UniversityCentersComponent } from './university-centers/university-centers.component';
+import { UniversityCentersDetailsComponent } from './university-centers/university-centers-details/university-centers-details.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { UniversityCentersComponent } from './university-centers/university-cent
     UniversityInstitutionComponent,
     UniversityAdministrationComponent,
     UniversityCentersComponent,
+    UniversityCentersDetailsComponent,
   ],
   exports: [
     UniversityInstitutionComponent,

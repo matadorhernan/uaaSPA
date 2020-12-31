@@ -1,6 +1,9 @@
-<div class="image">
-  <div class="block" #image></div>
-  <div class="container text-center">
-    <p>{{ data?.image.caption }}</p>
+<div class="image" [ngClass]="{ static: data?.image.static }">
+  <div class="wrapper">
+    <div class="back-block" #background></div>
+    <div class="block" #image></div>
   </div>
+</div>
+<div class="container text-center">
+  <p>{{ data?.image.caption }}</p>
 </div>
