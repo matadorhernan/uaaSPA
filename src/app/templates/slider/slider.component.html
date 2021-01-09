@@ -1,20 +1,18 @@
 <ngb-carousel>
-  <ng-template ngbSlide>
+  <ng-template ngbSlide *ngFor="let image of data?.list">
     <div class="img-wrapper">
-      <div class="gradient"></div>
+      <div #background class="gradient"></div>
     </div>
     <div class="carousel-caption">
       <div class="container">
         <div class="row">
           <div class="wrapper col-lg-6 col-md-12">
-            <h3>First slide label</h3>
+            <h3>
+              {{ image.caption.title }}
+            </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Repudiandae et odio aut, nulla non similique accusamus provident
-              fugiat amet dignissimos dolorum? Labore corrupti quod, autem
-              architecto modi dolores inventore culpa?
+              {{ image.caption.text }}
             </p>
-            <button class="btn btn-light" type="button">Text</button>
           </div>
         </div>
       </div>

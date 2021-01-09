@@ -17,6 +17,7 @@ import { ImageQuoteComponent } from './image-quote/image-quote.component';
 import { ImageSectionComponent } from './image-section/image-section.component';
 import { QuoteComponent } from './quote/quote.component';
 import { SectionComponent } from './section/section.component';
+import { SliderComponent } from './slider/slider.component';
 import { SocialComponent } from './social/social.component';
 import { TimelineComponent } from './timeline/timeline.component';
 
@@ -57,6 +58,8 @@ export class TemplatesResolverComponent implements AfterViewInit {
           ? ImageQuoteComponent
           : data.sectionType == 'timeline-section'
           ? TimelineComponent
+          : data.sectionType == 'slider-section'
+          ? SliderComponent
           : data.sectionType == 'card-columns'
           ? CardColumnsComponent
           : SectionComponent;
