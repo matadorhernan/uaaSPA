@@ -67,14 +67,66 @@ export const asociations_es = {
         caption: 'Lic. E. Gabriela Ruíz Guillén, Coordinadora del C.I.E.G.',
       },
       text:
-        'Es un organismo que pertenece a la Defensoría de los Derechos Universitarios. Está conformado por personas de las áreas académicas, laborales y estudiantiles de esta Máxima Casa de Estudios, cuyo fin es promover e incorporar la equidad de género como valor institucional al interior de la Universidad Autónoma de Aguascalientes.',
-    },
-    {
-      sectionType: 'basic-section',
-      text:
-        'Su principal objetivo es el promover la construcción de equidad de género al interior de la UAA, como factor de promoción de los derechos universitarios y derechos humanos en todo el personal docente, administrativo y de servicios, así como en el estudiantado a través de capacitaciones, actividades y proyectos que favorezcan un desarrollo humano integral, así como mejorar las relaciones humanas inter e intragenéricas justas y equilibradas.</br></br>Lic. E. Gabriela Ruíz Guillén</br><b>Coordinadora del C.I.E.G.</b></br>Modulo 1-A</br>Tel. 01 (449) 910-74-00 ext. 119</br>ddu_cieg@correo.uaa.mx',
+        'Es un organismo que pertenece a la Defensoría de los Derechos Universitarios. Está conformado por personas de las áreas académicas, laborales y estudiantiles de esta Máxima Casa de Estudios, cuyo fin es promover e incorporar la equidad de género como valor institucional al interior de la Universidad Autónoma de Aguascalientes.</br></br>Su principal objetivo es el promover la construcción de equidad de género al interior de la UAA, como factor de promoción de los derechos universitarios y derechos humanos en todo el personal docente, administrativo y de servicios, así como en el estudiantado a través de capacitaciones, actividades y proyectos que favorezcan un desarrollo humano integral, así como mejorar las relaciones humanas inter e intragenéricas justas y equilibradas.</br></br>Lic. E. Gabriela Ruíz Guillén</br><b>Coordinadora del C.I.E.G.</b></br>Modulo 1-A</br>Tel. 01 (449) 910-74-00 ext. 119</br>ddu_cieg@correo.uaa.mx',
       button: {
         path: 'http://defensoria.uaa.mx/cieg/index.php',
+        text: 'Visitar pagina',
+      },
+    },
+    {
+      sectionType: 'image-section',
+      titleHead: {
+        label: 'Patronato',
+        title: 'Patronato Universitario',
+      },
+      image: {
+        path:
+          'https://www.uaa.mx/portal/wp-content/uploads/2018/03/Patronato.jpg',
+        alt:
+          'Sr. Camilo Barba González, Presidente del Patronato Universitario',
+        caption:
+          'Sr. Camilo Barba González, Presidente del Patronato Universitario',
+      },
+      text:
+        'Órgano universitario que persigue la finalidad de fortalecer la vinculación entre la Universidad Autónoma de Aguascalientes y la sociedad, con el objetivo de que la población, los sectores gubernamental y empresarial conozcan las ventajas y el potencial de la Institución para atender a las necesidades de su momento, ya sea a través de sus servicios, de cursos de capacitación o el desarrollo de investigación aplicada.</br></br>Sr. Camilo Barba González</br><b>Presidente del Patronato Universitario</b></br>Unidad de Vinculación Universitaria, primer piso, Ciudad Universitaria</br>Tel. 01 (449) 139-32-54',
+    },
+    {
+      sectionType: 'image-section',
+      titleHead: {
+        label: 'Asociación',
+        title: 'Asociación de Ex Alumnos de la UAA',
+      },
+      image: {
+        path: 'https://www.uaa.mx/portal/wp-content/uploads/2018/03/exuaa.jpg',
+        alt:
+          'Lic. Jorge Mauricio Martínez Estébanez, Presidente de la Asociación de Ex Alumnos de la UAA',
+        caption:
+          'Lic. Jorge Mauricio Martínez Estébanez, Presidente de la Asociación de Ex Alumnos de la UAA',
+      },
+      text:
+        'Organismo que tiene el objetivo de impulsar la capacitación continua de los egresados en la UAA a través de cursos especializados y referentes, promover el sentido social instruido por la Institución mediante la realización de trabajo comunitario y altruista para sectores vulnerables de la sociedad; aunado a ello, busca fomentar el sentido de pertenencia, gestionar espacios y brindar asesorías a egresados; así como fortalecer el orgullo de pertenecer a una de las universidades más importantes de América Latina.</br></br>Lic. Jorge Mauricio Martínez Estébanez</br><b>Presidente de la Asociación de Ex Alumnos de la UAA </b></br>Tel. 01 (449) 914-00-04</br>jm@martinezestebanez.com.mx',
+      button: {
+        path: 'http://www.uaa.mx/egresados/',
+        text: 'Visitar pagina',
+      },
+    },
+    {
+      sectionType: 'image-section',
+      titleHead: {
+        label: 'Asociación',
+        title: 'Asociación de Ex Alumnos de la UAA',
+      },
+      image: {
+        path: 'https://www.uaa.mx/portal/wp-content/uploads/2018/03/feuua.jpg',
+        alt:
+          'M. en Admón. Ricardo González Álvarez, Presidente de la Fundación UAA',
+        caption:
+          'M. en Admón. Ricardo González Álvarez, Presidente de la Fundación UAA',
+      },
+      text:
+        'La Fundación UAA es considerada como un organismo cuya misión es coadyuvar con la Universidad Autónoma de Aguascalientes en el logro de sus fines a través de la gestión y procuración de recursos económicos, para destinarse a proyectos específicos.</br></br>Con su labor coadyuva a una mayor proyección y vinculación de la Institución con la sociedad, asimismo con las necesidades del estado y contribuye mediante el apoyo a proyectos de desarrollo, a que la Universidad ejerza una influencia y acción trascendentes en aquellos ámbitos propios de su función formadora y educativa.</br></br>M. en Admón. Ricardo González Álvarez</br><b>Presidente de la Fundación UAA</b></br></br>L.A.F. Idalia Del Rocío Juárez López</br><b>Directora Ejecutiva de la Fundación</b></br>Unidad de Vinculación Universitaria, segundo piso, Ciudad Universitaria</br>Tel 01 (449)1-39-32-52</br>fundacionuaa@correo.uaa.mx',
+      button: {
+        path: 'http://fundacionuaa.org.mx/',
         text: 'Visitar pagina',
       },
     },

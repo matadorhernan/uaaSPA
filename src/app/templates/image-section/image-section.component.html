@@ -10,7 +10,7 @@
         <a
           *ngIf="data?.button != undefined"
           [href]="data?.button.path"
-          class="btn btn-outline-primary mb-lg-0 my-4"
+          class="btn btn-outline-primary my-4"
           type="button"
         >
           <div>
@@ -28,9 +28,11 @@
           [innerHTML]="data?.iframeMarkup | sanitizeHtml"
         ></div>
       </div>
-      <div class="col-lg-6 col-md-12 mt-3 image">
+      <div
+        class="col-lg-6 col-md-12 mt-3 image"
+        *ngIf="data?.image != undefined && data?.iframeMarkup == undefined"
+      >
         <app-image
-          *ngIf="data?.image != undefined && data?.iframeMarkup == undefined"
           [image]="data?.image?.path"
           [caption]="data?.image?.caption"
           [alternativeText]="data?.image?.alt"
