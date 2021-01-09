@@ -5,6 +5,7 @@ import { administration_es } from './university/administration';
 import { centers_es } from './university/centers';
 import { development_es } from './university/develoment';
 import { academicModel_es } from './university/academic-model';
+import { asociations_es } from './university/asociations';
 
 export const local_es = {
   lang: 'es',
@@ -128,12 +129,7 @@ export const local_es = {
               'https://www.uaa.mx/institucion/LEGISLACION%20UNIVERSITARIA.pdf',
           },
           academicModel_es,
-          {
-            title: 'Asociaciones',
-            notExternal: true,
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/asociaciones-y-otros-organismos/',
-          },
+          asociations_es,
         ],
       },
       {

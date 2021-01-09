@@ -10,6 +10,7 @@ import { UniversityCentersComponent } from './university-centers/university-cent
 import { UniversityCentersDetailsComponent } from './university-centers/university-centers-details/university-centers-details.component';
 import { UniversityDevelopmentComponent } from './university-development/university-development.component';
 import { UniversityAcademicModelComponent } from './university-academic-model/university-academic-model.component';
+import { UniversityAsociationsComponent } from './university-asociations/university-asociations.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UniversityAcademicModelComponent } from './university-academic-model/un
     UniversityCentersDetailsComponent,
     UniversityDevelopmentComponent,
     UniversityAcademicModelComponent,
+    UniversityAsociationsComponent,
   ],
   exports: [
     UniversityInstitutionComponent,
@@ -28,6 +30,7 @@ import { UniversityAcademicModelComponent } from './university-academic-model/un
     UniversityCentersComponent,
     UniversityDevelopmentComponent,
     UniversityAcademicModelComponent,
+    UniversityAsociationsComponent,
     UniversityPageRoutingModule,
   ],
   imports: [CommonModule, TemplatesModule, UniversityPageRoutingModule],
