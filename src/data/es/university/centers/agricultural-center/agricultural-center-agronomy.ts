@@ -1,6 +1,6 @@
 export const agriculturalCenterAgronomy_es = {
   title: 'Ciencias Agronómicas',
-  subtitle: 'Ciencias Agropecuarias',
+  subtitle: 'Departamento de Ciencias Agropecuarias',
   notExternal: true,
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
   path: 'universidad/centros/agropecuarias/agronomicas',
@@ -86,14 +86,149 @@ export const agriculturalCenterAgronomy_es = {
         'Cuerpo Académico: MANEJO INTEGRADO DE AGROECOSISTEMAS</br>Nivel: CONSOLIDADO</br></br>LGAC 1. Conservación y Manejo de Recursos Naturales</br>Se estudia de forma integrada la estructura, dinámica y manejo de ecosistemas agro-silvo-pastorales y se aborda también en forma analítica cada uno de sus componentes: recursos hídricos, edáficos, climáticos y bióticos.</br></br>LGAC 2. Sistemas de Producción</br>Investigación sobre múltiples aspectos de la producción de especies vegetales: producción bajo condiciones controladas; el uso eficiente del agua, suelo y energía; fisiología y nutrición; manejo integrado de plagas y enfermedades; mejoramiento genético; biotecnología; y la economía de sistemas de producción.</br></br>Lista de integrantes:',
     },
     {
-      sectionType: 'bullet-section',
+      sectionType: 'team-grid',
       list: [
-        'Luna Ruíz José de Jesús (Líder del CA)',
-        'De Luna Jiménez Alfonso',
-        'Meraz Jiménez Antonio de Jesús',
-        'Moreno Rico Onésimo',
-        'Siqueiros Delgado María Elena',
-        'Sosa Ramírez Joaquín',
+        {
+          name: 'Luna Ruíz José de Jesús',
+          label: 'Líder del CA',
+        },
+        {
+          name: 'De Luna Jiménez Alfonso',
+          label: 'Miembro del CA',
+        },
+        {
+          name: 'Meraz Jiménez Antonio de Jesús',
+          label: 'Miembro del CA',
+        },
+        {
+          name: 'Moreno Rico Onésimo',
+          label: 'Miembro del CA',
+        },
+        {
+          name: 'Siqueiros Delgado María Elena',
+          label: 'Miembro del CA',
+        },
+        {
+          name: 'Sosa Ramírez Joaquín',
+          label: 'Miembro del CA',
+        },
+      ],
+    },
+    {
+      sectionType: 'basic-section',
+      titleHead: {
+        title: 'Docentes',
+        label: 'Academia',
+      },
+    },
+    {
+      sectionType: 'team-grid',
+      list: [
+        {
+          name: 'M. en C. Amalio Ponce Montoya',
+          label: 'Jefe de Departamento',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Amalio-ponce-montoya.jpg',
+            alt: 'M. en C. Amalio Ponce Montoya, UAA',
+          },
+        },
+        {
+          name: 'Dr. Joaquín Sosa Ramírez',
+          label: 'Profesor investigador',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Joaquin-sosa-ramirez.jpg',
+            alt: 'Dr. Joaquín Sosa Ramírez, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'Dr. José de Jesús Luna Ruíz',
+          label: 'Profesor investigador',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Jose-de-jesus-luna-ruiz.jpg',
+            alt: 'Dr. José de Jesús Luna Ruíz, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'Dr. Alfonso de Luna Jiménez',
+          label: 'Miembro',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Alfonso-de-luna-jimenez-copia.jpg',
+            alt: 'Dr. Alfonso de Luna Jiménez, UAA',
+          },
+        },
+        {
+          name: 'M. en C. Liliana Raquel Barba de Anda',
+          label: 'Miembro',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Liliana-raquel-barba-de-anda.jpg',
+            alt: 'M. en C. Liliana Raquel Barba de Anda, UAA',
+          },
+        },
+        {
+          name: 'M. en C. Jorge Alejandro Torres González',
+          label: 'Técnico Académico',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Jorge-alejandro-torres-gonzalez.jpg',
+            alt: 'M. en C. Jorge Alejandro Torres González, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'M. en C. Jesús Martín Fuantos Mendoza',
+          label: 'Profesor Investigador',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Jesus-fuantos-mendoza.jpg',
+            alt: 'M. en C. Jesús Martín Fuantos Mendoza, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'Dr. Fernando Ramos Gourcy',
+          label: 'Profesor Investigador',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Fernando-ramos-gourcy.jpg',
+            alt: 'Dr. Fernando Ramos Gourcy, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'M. en C. Mario Alejandro López Gutiérrez',
+          label: 'Producción de hortalizas en campo y en sistemas intensivos.',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Mario-alejandro-lopez-gutierrez.jpg',
+            alt: 'M. en C. Mario Alejandro López Gutiérrez, UAA',
+          },
+        },
+        {
+          name: 'M. en C. Otilio Vázquez Martínez',
+          label: 'Profesor Investigador',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Otilio-v-martinez.jpg',
+            alt: 'M. en C. Otilio Vázquez Martínez, UAA',
+          },
+          button: { text: 'Ver curriculum' },
+        },
+        {
+          name: 'Dr. Alberto Margarito García Munguía',
+          label: 'Parasitología Agrícola y control biológico.',
+          image: {
+            path:
+              'https://www.uaa.mx/portal/wp-content/uploads/2019/02/Alberto-margarito-garcia-munguia.jpg',
+            alt: 'Dr. Alberto Margarito García Munguía, UAA',
+          },
+        },
       ],
     },
   ],

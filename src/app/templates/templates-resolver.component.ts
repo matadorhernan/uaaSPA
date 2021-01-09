@@ -19,6 +19,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { SectionComponent } from './section/section.component';
 import { SliderComponent } from './slider/slider.component';
 import { SocialComponent } from './social/social.component';
+import { TeamGridComponent } from './team-grid/team-grid.component';
 import { TimelineComponent } from './timeline/timeline.component';
 
 @Component({
@@ -62,7 +63,10 @@ export class TemplatesResolverComponent implements AfterViewInit {
           ? SliderComponent
           : data.sectionType == 'card-columns'
           ? CardColumnsComponent
+          : data.sectionType == 'team-grid'
+          ? TeamGridComponent
           : SectionComponent;
+
       factory = this.componentFactoryResolver.resolveComponentFactory(section);
       this.componentRef = this.container.createComponent(factory);
       this.componentRef.instance.data = data;

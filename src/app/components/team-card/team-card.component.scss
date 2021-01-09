@@ -1,0 +1,62 @@
+.card {
+  height: 100%;
+  width: 100%;
+
+  border: none;
+  overflow: hidden;
+  box-shadow: 0px 0.25rem 10px #24314233;
+  border-radius: 10px;
+  .card-body {
+    position: relative;
+    min-height: 130px;
+    .avatar {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+
+      img {
+        height: 100px;
+        width: 100px;
+      }
+
+      i {
+        font-size: 100px;
+        opacity: 0.3;
+      }
+    }
+    .info {
+      position: relative;
+      z-index: 2;
+      h4,
+      h3 {
+        margin: 0;
+      }
+
+      h4 {
+        width: 80%;
+      }
+
+      a {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1em;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          height: 20px;
+          width: 20px;
+          background: #f5f5f5;
+          border-radius: 50%;
+          font-size: 1em;
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+}

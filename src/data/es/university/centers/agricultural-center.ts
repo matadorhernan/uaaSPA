@@ -2,6 +2,8 @@ import { agriculturalCenterAcademics_es } from './agricultural-center/agricultur
 import { agriculturalCenterContact_es } from './agricultural-center/agricultural-center-contact';
 import { agriculturalCenterDean_es } from './agricultural-center/agricultural-center-dean';
 import { agriculturalCenterAgronomy_es } from './agricultural-center/agricultural-center-agronomy';
+import { agriculturalCenterFood_es } from './agricultural-center/agricultural-center-food';
+import { agriculturalCenterVeterinary_es } from './agricultural-center/agricultural-center-veterinary';
 import { agriculturalCenterAreas_es } from './agricultural-center/agricultural-center-areas';
 import { agriculturalCenterPresentation_es } from './agricultural-center/agricultural-center-presentation';
 import { agriculturalCenterStructure_es } from './agricultural-center/agricultural-center-structure';
@@ -23,6 +25,8 @@ export const centerAgricultural_es = {
     agriculturalCenterAcademics_es,
     agriculturalCenterDean_es,
     agriculturalCenterAgronomy_es,
+    agriculturalCenterFood_es,
+    agriculturalCenterVeterinary_es,
     agriculturalCenterAreas_es,
     agriculturalCenterStructure_es,
     agriculturalCenterContact_es,

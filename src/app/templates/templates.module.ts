@@ -21,6 +21,7 @@ import { ImageSectionComponent } from './image-section/image-section.component';
 import { TemplatesResolverComponent } from './templates-resolver.component';
 import { BulletSectionComponent } from './bullet-section/bullet-section.component';
 import { CardColumnsComponent } from './card-columns/card-columns.component';
+import { TeamGridComponent } from './team-grid/team-grid.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { CardColumnsComponent } from './card-columns/card-columns.component';
     TemplatesResolverComponent,
     BulletSectionComponent,
     CardColumnsComponent,
+    TeamGridComponent,
   ],
   exports: [
     HeaderComponent,
