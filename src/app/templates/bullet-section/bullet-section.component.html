@@ -14,9 +14,7 @@
     <ul>
       <li *ngFor="let item of data?.list">
         <img src="/assets/flama.svg" alt="" />
-        <div>
-          {{ item }}
-        </div>
+        <div [innerHTML]="item"></div>
       </li>
     </ul>
   </div>

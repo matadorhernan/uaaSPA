@@ -3,11 +3,11 @@ ul {
   margin: 0;
   list-style: none;
   li {
+    margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-start;
 
-    height: 2em;
     line-height: 2em;
     font-size: 1.1em;
 
