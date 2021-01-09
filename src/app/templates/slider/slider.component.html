@@ -4,13 +4,13 @@
     <div class="carousel-body">
       <div class="container py-5">
         <div class="row">
-          <div class="wrapper col-lg-6 col-md-12">
-            <h3>
-              {{ image.caption.title }}
-            </h3>
-            <p>
-              {{ image.caption.text }}
-            </p>
+          <div class="col-lg-6 col-md-12">
+            <div class="wrapper">
+              <h3>
+                {{ image?.caption.title }}
+              </h3>
+              <p [innerHTML]="image?.caption.text"></p>
+            </div>
           </div>
         </div>
       </div>

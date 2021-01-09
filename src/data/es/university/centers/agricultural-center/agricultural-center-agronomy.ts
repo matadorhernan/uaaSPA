@@ -33,7 +33,7 @@ export const agriculturalCenterAgronomy_es = {
           caption: {
             title: 'Cultivo de Tejidos y Fisiología Vegetal',
             text:
-              'Su objetivo es propiciar recursos didácticos para el estudio de la fisiología vegetal y desarrollar sistemas de cultivo in vitro de plantas apoyando en las actividades sustantivas definidas por el Departamento de Fitotecnia. En la docencia, el laboratorio apoya en los procesos de enseñanza y aprendizaje a través prácticas que apoyan a las asignaturas del Programa Educativo de Ing. Agrónomo y a otros programas. En la investigación se desarrollan sistemas de micropropagación de especies de hortalizas, frutales y plantas económicamente importantes, cuyas perspectivas de producción sean bajo condiciones de invernadero u otros sistemas de producción intensiva.  En la extensión se ofrece el curso Micropropagación de plantas in vitro, dirigido al público en general y promueve en el técnico.',
+              'Su objetivo es propiciar recursos didácticos para el estudio de la fisiología vegetal y desarrollar sistemas de cultivo in vitro de plantas apoyando en las actividades sustantivas definidas por el Departamento de Fitotecnia. En la docencia, el laboratorio apoya en los procesos de enseñanza y aprendizaje a través prácticas que apoyan a las asignaturas del Programa Educativo de Ing. Agrónomo y a otros programas. En la investigación se desarrollan sistemas de micropropagación de especies de hortalizas, frutales y plantas económicamente importantes, cuyas perspectivas de producción sean bajo condiciones de invernadero u otros sistemas de producción intensiva.  En la extensión se ofrece el curso Micropropagación de plantas in vitro, dirigido al público en general y promueve en el técnico.</br></br>Responsable: M. en C. Otilio Vázquez Martínez ovazmar@correo.uaa.mx',
           },
         },
         {
@@ -43,7 +43,7 @@ export const agriculturalCenterAgronomy_es = {
           caption: {
             title: 'Laboratorio de Parasitología Agrícola',
             text:
-              'Laboratorio de enseñanza, investigación y servicio en el tema de fitosanidad. Realiza investigación para el sector agrícola del estado de Aguascalientes, análisis de diagnóstico fitosanitario en plagas, hongos, bacterias, nemátodosm y malezas. Ofrece diagnóstico de patógenos como Salmonella, E. coli.',
+              'Laboratorio de enseñanza, investigación y servicio en el tema de fitosanidad. Realiza investigación para el sector agrícola del estado de Aguascalientes, análisis de diagnóstico fitosanitario en plagas, hongos, bacterias, nemátodosm y malezas. Ofrece diagnóstico de patógenos como Salmonella, E. coli.</br></br>Responsable: Dr. Alberto M. García Munguía amunguia@correo.uaa.mx',
           },
         },
         {
@@ -51,9 +51,27 @@ export const agriculturalCenterAgronomy_es = {
             'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
           alt: 'Centro de Ciencias Agropecuarias de la UAA',
           caption: {
-            title: 'Laboratorio de Parasitología Agrícola',
-            text:
-              'Laboratorio de enseñanza, investigación y servicio en el tema de fitosanidad. Realiza investigación para el sector agrícola del estado de Aguascalientes, análisis de diagnóstico fitosanitario en plagas, hongos, bacterias, nemátodosm y malezas. Ofrece diagnóstico de patógenos como Salmonella, E. coli.',
+            title:
+              'Laboratorio de Análisis de suelos, Agua y Nutrientes Vegetales',
+            text: 'Responsable: M. en C. Liliana Raquel Barba de Anda',
+          },
+        },
+        {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
+          alt: 'Centro de Ciencias Agropecuarias de la UAA',
+          caption: {
+            title:
+              'Laboratorio de Análisis de Recursos Naturales y Sistemas Agrícolas',
+            text: 'Responsable: M. en C. Liliana Raquel Barba de Anda',
+          },
+        },
+        {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
+          alt: 'Centro de Ciencias Agropecuarias de la UAA',
+          caption: {
+            title: 'Laboratorio de Producción Orgánica y Energías Alternativas',
           },
         },
       ],
