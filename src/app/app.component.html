@@ -1,3 +1,6 @@
+<div class="bar" [ngClass]="{ loading: isLoading }">
+  <div class="loading-bar"></div>
+</div>
 <div class="app">
   <app-side-nav *ngIf="isSideNav"></app-side-nav>
   <div class="view" [ngClass]="{ small: isSideNav }">
@@ -5,7 +8,6 @@
       <app-navbar></app-navbar>
     </div>
     <div class="mobile-mask">
-      <app-breadcrumb></app-breadcrumb>
       <div class="outlet">
         <router-outlet></router-outlet>
       </div>

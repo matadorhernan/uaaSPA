@@ -3,6 +3,8 @@ import { institution_es } from './university/institution';
 import { leadership_es } from './university/leadership';
 import { administration_es } from './university/administration';
 import { centers_es } from './university/centers';
+import { development_es } from './university/develoment';
+import { academicModel_es } from './university/academic-model';
 
 export const local_es = {
   lang: 'es',
@@ -108,34 +110,24 @@ export const local_es = {
           },
           administration_es,
           centers_es,
-          {
-            title: 'Plan de Desarrollo',
-            notExternal: true,
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/plan-de-desarrollo/',
-          },
+          development_es,
           {
             title: 'Consejo Universitario',
-            notExternal: true,
+            notExternal: false,
             path: 'https://www.uaa.mx/consejo/',
           },
           {
             title: 'Correo Universitario',
-            notExternal: true,
+            notExternal: false,
             path: 'https://www.uaa.mx/consejo/?page_id=638',
           },
           {
             title: 'Legislación Universitaria',
-            notExternal: true,
+            notExternal: false,
             path:
               'https://www.uaa.mx/institucion/LEGISLACION%20UNIVERSITARIA.pdf',
           },
-          {
-            title: 'Modelo Educativo Institucional',
-            notExternal: true,
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/modelo-educativo-institucional/',
-          },
+          academicModel_es,
           {
             title: 'Asociaciones',
             notExternal: true,

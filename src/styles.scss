@@ -20,3 +20,23 @@ body {
 .noto {
   font-family: "Noto Serif", serif !important;
 }
+
+div,
+img,
+span,
+label,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+ul,
+li {
+  user-select: none;
+}

@@ -21,7 +21,7 @@
             [ngClass]="{ activated: !navbar.quickLinks.collapsed }"
           >
             <li class="sub-item" *ngFor="let item of navbar.quickLinks.pages">
-              <i class="material-icons mr-2">sort</i>
+              <i class="material-icons mr-2">launch</i>
               <a [href]="item.path">
                 {{ item.title | titlecase }}
               </a>
@@ -40,9 +40,23 @@
           </li>
           <ul class="sub-menu" [ngClass]="{ activated: !page.collapsed }">
             <li class="sub-item" *ngFor="let subItem of page.pages">
-              <i class="material-icons mr-2">sort</i>
-              <a [href]="subItem.path">
-                {{ subItem.title | titlecase }}
+              <i class="material-icons mr-2">{{
+                subItem.notExternal ? "sort" : "launch"
+              }}</i>
+              <a
+                *ngIf="subItem.notExternal"
+                class="dropdown-item"
+                [routerLink]="subItem.path"
+              >
+                {{ subItem.title }}
+              </a>
+              <a
+                *ngIf="!subItem.notExternal"
+                class="dropdown-item"
+                [href]="subItem.path"
+                target="_blank"
+              >
+                {{ subItem.title }}
               </a>
             </li>
           </ul>

@@ -5,6 +5,8 @@ import { UniversityLeadershipComponent } from './university-leadership/universit
 import { UniversityAdministrationComponent } from './university-administration/university-administration.component';
 import { UniversityCentersComponent } from './university-centers/university-centers.component';
 import { UniversityCentersDetailsComponent } from './university-centers/university-centers-details/university-centers-details.component';
+import { UniversityDevelopmentComponent } from './university-development/university-development.component';
+import { UniversityAcademicModelComponent } from './university-academic-model/university-academic-model.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,14 @@ const routes: Routes = [
   {
     path: 'centros/:page/:details',
     component: UniversityCentersDetailsComponent,
+  },
+  {
+    path: 'desarrollo',
+    component: UniversityDevelopmentComponent,
+  },
+  {
+    path: 'modelo',
+    component: UniversityAcademicModelComponent,
   },
 ];
 @NgModule({
