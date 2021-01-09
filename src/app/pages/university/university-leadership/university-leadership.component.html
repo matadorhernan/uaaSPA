@@ -1,7 +1,7 @@
 <app-header
-  [image]="localData.image.path"
-  [title]="localData.title"
-  [label]="localData.subtitle"
+  [image]="localData?.image.path"
+  [title]="localData?.title"
+  [label]="localData?.subtitle"
 >
 </app-header>
 <app-card-grid [data]="localData"></app-card-grid>
@@ -9,3 +9,4 @@
   [data]="section"
   *ngFor="let section of localData?.sections"
 ></app-templates-resolver>
+<div class="py-5"></div>

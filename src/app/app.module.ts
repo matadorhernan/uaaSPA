@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LandingComponent } from './pages/landing/landing.component';
-import { AboutModule } from './pages/about/about.module';
 import { SharedModule } from './shared/shared.module';
 import { ComponentsModule } from './components/components.module';
 import { TemplatesModule } from './templates/templates.module';
@@ -21,7 +20,6 @@ import { UniversityPageModule } from './pages/university/university.module';
     SharedModule,
     ComponentsModule,
     TemplatesModule,
-    AboutModule,
     NgbModule,
     BrowserAnimationsModule,
     UniversityPageModule,

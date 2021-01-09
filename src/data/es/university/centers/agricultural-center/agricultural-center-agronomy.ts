@@ -17,6 +17,50 @@ export const agriculturalCenterAgronomy_es = {
     {
       sectionType: 'basic-section',
       titleHead: {
+        title: 'Infraestructura',
+        label: 'Recursos',
+      },
+      text:
+        'El Departamento de Ciencias Agronómicas, cuenta con los laboratorios de: Parasitología Agrícola, Fisiología Vegetal, Cultivo de Tejidos y Semillas, Análisis de suelos, Agua y Nutrientes Vegetales, Análisis de Recursos Naturales y Sistemas Agrícolas, Producción Orgánica y Energías Alternativas.',
+    },
+    {
+      sectionType: 'slider-section',
+      list: [
+        {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
+          alt: 'Centro de Ciencias Agropecuarias de la UAA',
+          caption: {
+            title: 'Cultivo de Tejidos y Fisiología Vegetal',
+            text:
+              'Su objetivo es propiciar recursos didácticos para el estudio de la fisiología vegetal y desarrollar sistemas de cultivo in vitro de plantas apoyando en las actividades sustantivas definidas por el Departamento de Fitotecnia. En la docencia, el laboratorio apoya en los procesos de enseñanza y aprendizaje a través prácticas que apoyan a las asignaturas del Programa Educativo de Ing. Agrónomo y a otros programas. En la investigación se desarrollan sistemas de micropropagación de especies de hortalizas, frutales y plantas económicamente importantes, cuyas perspectivas de producción sean bajo condiciones de invernadero u otros sistemas de producción intensiva.  En la extensión se ofrece el curso Micropropagación de plantas in vitro, dirigido al público en general y promueve en el técnico.',
+          },
+        },
+        {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
+          alt: 'Centro de Ciencias Agropecuarias de la UAA',
+          caption: {
+            title: 'Laboratorio de Parasitología Agrícola',
+            text:
+              'Laboratorio de enseñanza, investigación y servicio en el tema de fitosanidad. Realiza investigación para el sector agrícola del estado de Aguascalientes, análisis de diagnóstico fitosanitario en plagas, hongos, bacterias, nemátodosm y malezas. Ofrece diagnóstico de patógenos como Salmonella, E. coli.',
+          },
+        },
+        {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
+          alt: 'Centro de Ciencias Agropecuarias de la UAA',
+          caption: {
+            title: 'Laboratorio de Parasitología Agrícola',
+            text:
+              'Laboratorio de enseñanza, investigación y servicio en el tema de fitosanidad. Realiza investigación para el sector agrícola del estado de Aguascalientes, análisis de diagnóstico fitosanitario en plagas, hongos, bacterias, nemátodosm y malezas. Ofrece diagnóstico de patógenos como Salmonella, E. coli.',
+          },
+        },
+      ],
+    },
+    {
+      sectionType: 'basic-section',
+      titleHead: {
         title: 'Cuerpos académicos',
         label: 'Academia',
       },
@@ -32,40 +76,6 @@ export const agriculturalCenterAgronomy_es = {
         'Moreno Rico Onésimo',
         'Siqueiros Delgado María Elena',
         'Sosa Ramírez Joaquín',
-      ],
-    },
-    {
-      sectionType: 'basic-section',
-      titleHead: {
-        title: 'Infraestructura',
-        label: 'Recursos',
-      },
-      text:
-        'El Departamento de Ciencias Agronómicas, cuenta con los laboratorios de: Parasitología Agrícola, Fisiología Vegetal, Cultivo de Tejidos y Semillas, Análisis de suelos, Agua y Nutrientes Vegetales, Análisis de Recursos Naturales y Sistemas Agrícolas, Producción Orgánica y Energías Alternativas.',
-    },
-    {
-      sectionType: 'slider-section',
-      list: [
-        {
-          path:
-            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
-          alt: 'Centro de Ciencias Agropecuarias de la UAA',
-          caption: {
-            title: 'Infraestructura',
-            text:
-              'El Departamento de Ciencias Agronómicas, cuenta con los laboratorios de: Parasitología Agrícola, Fisiología Vegetal, Cultivo de Tejidos y Semillas, Análisis de suelos, Agua y Nutrientes Vegetales, Análisis de Recursos Naturales y Sistemas Agrícolas, Producción Orgánica y Energías Alternativas.',
-          },
-        },
-        {
-          path:
-            'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
-          alt: 'Centro de Ciencias Agropecuarias de la UAA',
-          caption: {
-            title: 'Infraestructura',
-            text:
-              'El Departamento de Ciencias Agronómicas, cuenta con los laboratorios de: Parasitología Agrícola, Fisiología Vegetal, Cultivo de Tejidos y Semillas, Análisis de suelos, Agua y Nutrientes Vegetales, Análisis de Recursos Naturales y Sistemas Agrícolas, Producción Orgánica y Energías Alternativas.',
-          },
-        },
       ],
     },
   ],
