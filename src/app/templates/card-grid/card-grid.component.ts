@@ -7,8 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardGridComponent implements OnInit {
   @Input('data') data: any;
-
   constructor() {}
-
   ngOnInit(): void {}
 }

@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared.module';
 import { ComponentsModule } from './components/components.module';
 import { TemplatesModule } from './templates/templates.module';
 import { UniversityPageModule } from './pages/university/university.module';
+import { AdmisionsPageModule } from './pages/admisions/admisions.module';
 
 @NgModule({
   declarations: [AppComponent, LandingComponent],
@@ -23,6 +24,7 @@ import { UniversityPageModule } from './pages/university/university.module';
     NgbModule,
     BrowserAnimationsModule,
     UniversityPageModule,
+    AdmisionsPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

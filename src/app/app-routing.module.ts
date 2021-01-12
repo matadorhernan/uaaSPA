@@ -14,6 +14,13 @@ const routes: Routes = [
         (m) => m.UniversityPageModule
       ),
   },
+  {
+    path: 'admisiones',
+    loadChildren: () =>
+      import('./pages/admisions/admisions.module').then(
+        (m) => m.AdmisionsPageModule
+      ),
+  },
 ];
 @NgModule({
   imports: [
