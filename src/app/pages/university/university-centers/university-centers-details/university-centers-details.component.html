@@ -1,7 +1,7 @@
 <app-header
   [image]="currentData.image"
-  [title]="currentData.title"
-  [label]="currentData.subtitle"
+  [title]="currentData?.titleHead.title"
+  [label]="currentData?.titleHead.label"
 >
 </app-header>
 <app-card-grid [data]="localData"></app-card-grid>

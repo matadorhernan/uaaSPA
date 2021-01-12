@@ -1,7 +1,9 @@
 export const institutionIdeals_es = {
-  title: 'Ideario',
-  subtitle: 'Nuestro Ideario',
   notExternal: true,
+  titleHead: {
+    title: 'Ideario',
+    label: 'Nuestro Ideario',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Himno-Universitario-1024x561.jpg',
   path: 'universidad/institucion/ideario',

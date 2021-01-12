@@ -30,7 +30,7 @@
           <li class="menu-item dropdown" *ngFor="let page of pages">
             <div ngbDropdown class="d-inline-block">
               <a class="btn btn-default" ngbDropdownToggle>
-                <span>{{ page.title }}</span>
+                <span>{{ page?.titleHead.title }}</span>
                 <i class="material-icons">keyboard_arrow_down</i>
               </a>
               <div ngbDropdownMenu class="dropdown-menu">
@@ -46,7 +46,7 @@
                     <div class="col-8 info pl-3">
                       <app-title-head
                         [label]="'Menu'"
-                        [title]="page.title"
+                        [title]="page?.titleHead.title"
                       ></app-title-head>
                       <div class="row mt-5">
                         <div
@@ -59,7 +59,7 @@
                               class="dropdown-item"
                               [routerLink]="item.path"
                             >
-                              {{ item.title }}
+                              {{ item?.titleHead.title }}
                             </a>
                             <a
                               *ngIf="!item.notExternal"
@@ -67,7 +67,7 @@
                               [href]="item.path"
                               target="_blank"
                             >
-                              {{ item.title }}
+                              {{ item?.titleHead.title }}
                               <i class="material-icons">launch</i>
                             </a>
                           </div>

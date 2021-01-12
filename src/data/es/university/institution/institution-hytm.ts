@@ -1,7 +1,9 @@
 export const institutionHytm_es = {
-  title: 'Himno',
-  subtitle: 'Nuestro Himno',
   notExternal: true,
+  titleHead: {
+    title: 'Himno',
+    label: 'Nuestro Himno',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Himno-Universitario-1024x561.jpg',
   path: 'universidad/institucion/himno',

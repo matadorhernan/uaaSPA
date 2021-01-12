@@ -11,6 +11,7 @@ import {
 } from '@angular/core';
 import { BulletSectionComponent } from './bullet-section/bullet-section.component';
 import { CardColumnsComponent } from './card-columns/card-columns.component';
+import { CardGridComponent } from './card-grid/card-grid.component';
 import { ImageBlockComponent } from './image-block/image-block.component';
 import { ImageQuoteComponent } from './image-quote/image-quote.component';
 
@@ -63,6 +64,8 @@ export class TemplatesResolverComponent implements AfterViewInit {
           ? SliderComponent
           : data.sectionType == 'card-columns'
           ? CardColumnsComponent
+          : data.sectionType == 'card-grid'
+          ? CardGridComponent
           : data.sectionType == 'team-grid'
           ? TeamGridComponent
           : SectionComponent;

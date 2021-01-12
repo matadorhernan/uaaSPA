@@ -1,8 +1,8 @@
-export const agriculturalCenterStructure_es = {
+export const juniorHighStructure_es = {
   notExternal: true,
   titleHead: {
     title: 'Organigrama',
-    label: 'Ciencias Agropecuarias',
+    label: 'Centro de Educación Media',
   },
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
   path: 'universidad/centros/agropecuarias/organigrama',

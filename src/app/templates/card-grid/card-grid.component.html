@@ -4,8 +4,8 @@
       <div class="col-12 text-center">
         <app-title-head
           [position]="'center'"
-          [title]="data?.title"
-          [label]="data?.subtitle"
+          [title]="data?.titleHead.title"
+          [label]="data?.titleHead.label"
         ></app-title-head>
         <p class="my-5" [innerHTML]="data?.text"></p>
       </div>
@@ -16,8 +16,8 @@
         *ngFor="let page of data?.pages"
       >
         <app-card
-          [title]="page.title"
-          [subtitle]="page.subtitle"
+          [title]="page?.titleHead.title"
+          [label]="page?.titleHead.label"
           [path]="page.path"
           [notExternal]="page.notExternal"
         ></app-card>

@@ -4,6 +4,7 @@ import { ProcessComponent } from './process/process.component';
 import { AplicantComponent } from './aplicant/aplicant.component';
 import { AccreditingComponent } from './accrediting/accrediting.component';
 import { ResultsComponent } from './results/results.component';
+import { SchoolarshipsComponent } from './schoolarships/schoolarships.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'resultados',
     component: ResultsComponent,
+  },
+  {
+    path: 'becas',
+    component: SchoolarshipsComponent,
   },
 ];
 @NgModule({

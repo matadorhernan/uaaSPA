@@ -1,7 +1,9 @@
 export const agriculturalCenterPresentation_es = {
-  title: 'Presentación',
-  subtitle: 'Ciencias Agropecuarias',
   notExternal: true,
+  titleHead: {
+    title: 'Presentación',
+    label: 'Ciencias Agropecuarias',
+  },
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
   path: 'universidad/centros/agropecuarias/presentacion',
   sections: [

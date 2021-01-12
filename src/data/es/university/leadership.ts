@@ -1,7 +1,9 @@
 export const leadership_es = {
   notExternal: true,
-  title: 'Rectoría',
-  subtitle: 'Rectoria de la Universidad',
+  titleHead: {
+    title: 'Rectoría',
+    label: 'Rectoria de la Universidad',
+  },
   path: 'universidad/rectoria',
   text:
     'Conoce mas acerca de la Universidad y los planes a futuro del Rector de la institucion; del mismo modo, la informacion se dispone para que conozcas todo acerca de las metas alcanzadas a travez de los siguientes documentos y otros archivos de esta seccion.',
@@ -15,43 +17,55 @@ export const leadership_es = {
   pages: [
     {
       notExternal: false,
-      title: 'Primer Informe',
-      subtitle: 'Francisco Javier Avelar González,  2017',
+      titleHead: {
+        title: 'Primer Informe',
+        label: 'Francisco Javier Avelar González,  2017',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2019/02/informe2017.pdf',
     },
     {
       notExternal: false,
-      title: 'Plan de Trabajo',
-      subtitle: 'Plan de Trabajo de la Institucion, 2018',
+      titleHead: {
+        title: 'Plan de Trabajo',
+        label: 'Plan de Trabajo de la Institucion, 2018',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2019/06/Informe-2018-web.pdf',
     },
     {
       notExternal: false,
-      title: 'Segundo Informe',
-      subtitle: 'Francisco Javier Avelar González,  2018',
+      titleHead: {
+        title: 'Segundo Informe',
+        label: 'Francisco Javier Avelar González,  2018',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2019/06/Informe-2018-web.pdf',
     },
     {
       notExternal: false,
-      title: 'Plan de Trabajo',
-      subtitle: 'Plan de Trabajo de la Institucion, 2019',
+      titleHead: {
+        title: 'Plan de Trabajo',
+        label: 'Plan de Trabajo de la Institucion, 2019',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2020/06/Plan-de-Trabajo-2019.pdf',
     },
     {
       notExternal: false,
-      title: 'Tercer Informe',
-      subtitle: 'Francisco Javier Avelar González,  2019',
+      titleHead: {
+        title: 'Tercer Informe',
+        label: 'Francisco Javier Avelar González,  2019',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2020/01/Informe-2019-web.pdf',
     },
     {
       notExternal: false,
-      title: 'Plan de Trabajo',
-      subtitle: 'Plan de Trabajo de la Institucion, 2020',
+      titleHead: {
+        title: 'Plan de Trabajo',
+        label: 'Plan de Trabajo de la Institucion, 2020',
+      },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2020/06/plan-de-trabajo-2020.pdf',
     },

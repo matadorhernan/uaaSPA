@@ -1,7 +1,9 @@
 export const centerConstruction_es = {
   notExternal: true,
-  title: 'Ciencias del Diseño y de la Construcción',
-  subtitle: 'Centro Académico',
+  titleHead: {
+    title: 'Ciencias del Diseño y de la Construcción',
+    label: 'Centro Académico',
+  },
   path: 'universidad/centros/construcción',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',

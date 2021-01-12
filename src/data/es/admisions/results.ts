@@ -1,7 +1,9 @@
 export const results_es = {
   notExternal: true,
-  title: 'Resultados de Admisión',
-  subtitle: 'Admisiones',
+  titleHead: {
+    title: 'Resultados de Admisión',
+    label: 'Admisiones',
+  },
   path: 'admisiones/resultados',
   image: {
     path:
@@ -14,15 +16,19 @@ export const results_es = {
   pages: [
     {
       notExternal: false,
-      title: 'Resultados del proceso de admisión',
-      subtitle: 'Aspirantes Nacionales de Enero 2021',
+      titleHead: {
+        title: 'Resultados del proceso de admisión',
+        label: 'Aspirantes Nacionales de Enero 2021',
+      },
       path:
         'http://posgrados.dgip.uaa.mx/posgrado/index.php?option=com_content&view=article&id=559&Itemid=670',
     },
     {
       notExternal: false,
-      title: 'Pre-registro Inscripción',
-      subtitle: 'Aceptados a Posgrados',
+      titleHead: {
+        title: 'Pre-registro Inscripción',
+        label: 'Aceptados a Posgrados',
+      },
       path: 'https://esiima.uaa.mx/exaadm/login.jsp',
     },
   ],

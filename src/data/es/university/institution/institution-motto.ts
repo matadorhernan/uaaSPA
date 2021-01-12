@@ -1,7 +1,9 @@
 export const institutionMotto_es = {
-  title: 'Lema',
-  subtitle: 'Nuestro Lema',
   notExternal: true,
+  titleHead: {
+    title: 'Lema',
+    label: 'Nuestro Lema',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Escuela-de-Agricultura-1024x561.jpg',
   path: 'universidad/institucion/lema',

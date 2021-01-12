@@ -1,7 +1,9 @@
 export const asociations_es = {
   notExternal: true,
-  title: 'Asociaciones',
-  subtitle: 'Asociaciones y Otros Organismos',
+  titleHead: {
+    title: 'Asociaciones',
+    label: 'Asociaciones y Otros Organismos',
+  },
   path: 'universidad/asociaciones',
   image: {
     path:

@@ -1,5 +1,9 @@
 export const landing_es = {
-  id: 'landing',
+  notExternal: true,
+  titleHead: {
+    title: 'Universidad</br>Autónoma de</br>Aguascalientes',
+    label: ' Campus Sur',
+  },
   image:
     'https://informags.files.wordpress.com/2014/10/auditorio-uaa-sicom.jpg',
   sections: [

@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input('title') title: string;
-  @Input('subtitle') subtitle: string;
+  @Input('label') label: string;
   @Input('path') path: string;
   @Input('notExternal') notExternal: boolean;
 

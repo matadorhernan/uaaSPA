@@ -1,7 +1,9 @@
 export const institutionMascot_es = {
-  title: 'Mascota',
-  subtitle: 'Nuestra Mascota',
   notExternal: true,
+  titleHead: {
+    title: 'Mascota',
+    label: 'Nuestra Mascota',
+  },
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2017/06/logo-gallos.png',
   path: 'universidad/institucion/mascota',
   sections: [

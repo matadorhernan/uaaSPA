@@ -1,7 +1,9 @@
 export const institutionGov_es = {
-  title: 'Gobierno',
-  subtitle: 'Nuestra Estructura',
   notExternal: true,
+  titleHead: {
+    title: 'Gobierno',
+    label: 'Nuestra Estructura',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2018/10/H-consejo-UAA-1024x683.jpg',
   path: 'universidad/institucion/gobierno',

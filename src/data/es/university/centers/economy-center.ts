@@ -1,7 +1,9 @@
 export const centerEconomy_es = {
   notExternal: true,
-  title: 'Ciencias Económicas y Administrativas',
-  subtitle: 'Centro Académico',
+  titleHead: {
+    title: 'Ciencias Económicas y Administrativas',
+    label: 'Centro Académico',
+  },
   path: 'universidad/centros/económicas',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',

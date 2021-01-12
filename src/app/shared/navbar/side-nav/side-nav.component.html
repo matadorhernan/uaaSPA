@@ -13,7 +13,7 @@
             (click)="openSubMenu(navbar.quickLinks)"
             [ngClass]="{ activated: !navbar.quickLinks.collapsed }"
           >
-            <span>{{ navbar.quickLinks.title }}</span>
+            <span>{{ navbar.quickLinks?.titleHead.title }}</span>
             <i class="material-icons">keyboard_arrow_down</i>
           </li>
           <ul
@@ -23,7 +23,7 @@
             <li class="sub-item" *ngFor="let item of navbar.quickLinks.pages">
               <i class="material-icons mr-2">launch</i>
               <a [href]="item.path">
-                {{ item.title | titlecase }}
+                {{ item?.titleHead.title | titlecase }}
               </a>
             </li>
           </ul>
@@ -33,9 +33,11 @@
           <li
             class="menu-item"
             (click)="openSubMenu(page)"
-            [ngClass]="{ activated: !page.collapsed && page.title == '' }"
+            [ngClass]="{
+              activated: !page.collapsed && page?.titleHead.title == ''
+            }"
           >
-            <span>{{ page.title }}</span>
+            <span>{{ page?.titleHead.title }}</span>
             <i class="material-icons">keyboard_arrow_down</i>
           </li>
           <ul class="sub-menu" [ngClass]="{ activated: !page.collapsed }">
@@ -48,7 +50,7 @@
                 class="dropdown-item"
                 [routerLink]="subItem.path"
               >
-                {{ subItem.title }}
+                {{ subItem?.titleHead.title }}
               </a>
               <a
                 *ngIf="!subItem.notExternal"
@@ -56,7 +58,7 @@
                 [href]="subItem.path"
                 target="_blank"
               >
-                {{ subItem.title }}
+                {{ subItem?.titleHead.title }}
               </a>
             </li>
           </ul>

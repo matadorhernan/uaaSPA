@@ -22,6 +22,7 @@ import { SchoolarshipsComponent } from './schoolarships/schoolarships.component'
     AplicantComponent,
     AccreditingComponent,
     ResultsComponent,
+    SchoolarshipsComponent,
     AdmisionsPageRoutingModule,
   ],
   imports: [CommonModule, TemplatesModule, AdmisionsPageRoutingModule],

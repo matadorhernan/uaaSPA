@@ -1,8 +1,15 @@
 <section>
-  <div class="container pt-5">
+  <div
+    class="container"
+    [ngClass]="{
+      'pt-3': data?.titleHead == undefined,
+      'pt-5': data?.titleHead != undefined
+    }"
+  >
     <div class="row">
       <div class="col-lg-6 col-md-12">
         <app-title-head
+          *ngIf="data?.titleHead != undefined"
           [label]="data?.titleHead.label"
           [title]="data?.titleHead.title"
         ></app-title-head>

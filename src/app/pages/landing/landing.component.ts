@@ -9,7 +9,7 @@ import * as _ from 'lodash';
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
-  public readonly baseInfo = _.cloneDeep(local_es);
+  public readonly localData = _.cloneDeep(local_es.root.landing);
   constructor() {}
   ngOnInit(): void {}
 }

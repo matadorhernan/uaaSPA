@@ -13,7 +13,6 @@ export class UniversityDevelopmentComponent implements OnInit {
 
   constructor() {
     this.localData = _.cloneDeep(local_es.root.pages[0].pages[5]);
-    console.log(this.localData);
   }
   ngOnInit(): void {}
 }

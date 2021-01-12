@@ -1,7 +1,9 @@
 export const institutionHistory_es = {
-  title: 'Historia',
-  subtitle: 'Nuestra Historia',
   notExternal: true,
+  titleHead: {
+    title: 'Historia',
+    label: 'Nuestra Historia',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Escuela-de-Agricultura-1024x561.jpg',
   path: 'universidad/institucion/historia',

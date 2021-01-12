@@ -29,6 +29,7 @@ export class NavbarComponent implements OnInit {
   public getChunk(pages: any): any {
     return _.chunk(pages, 7);
   }
+
   ngOnInit(): void {}
   ngOnDestroy(): void {
     this.isSideNavEvent.unsubscribe();

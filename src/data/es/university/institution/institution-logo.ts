@@ -1,7 +1,9 @@
 export const institutionLogo_es = {
-  title: 'Logotipo',
-  subtitle: 'Nuestro Logotipo',
   notExternal: true,
+  titleHead: {
+    title: 'Logotipo',
+    label: 'Nuestro Logotipo',
+  },
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2017/06/uaalogo-01.png',
   path: 'universidad/institucion/logotipo',
   sections: [

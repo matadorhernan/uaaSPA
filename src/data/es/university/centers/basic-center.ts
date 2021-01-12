@@ -1,7 +1,9 @@
 export const centerBasic_es = {
   notExternal: true,
-  title: 'Ciencias Básicas',
-  subtitle: 'Centro Académico',
+  titleHead: {
+    title: 'Ciencias Básicas',
+    label: 'Centro Académico',
+  },
   path: 'universidad/centros/básicas',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',

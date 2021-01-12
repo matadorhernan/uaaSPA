@@ -39,6 +39,10 @@ const routes: Routes = [
     redirectTo: 'centros/artes/presentacion',
   },
   {
+    path: 'centros/media',
+    redirectTo: 'centros/media/presentacion',
+  },
+  {
     path: 'centros/:page/:details',
     component: UniversityCentersDetailsComponent,
   },

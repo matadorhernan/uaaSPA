@@ -10,11 +10,13 @@ import { agriculturalCenterStructure_es } from './agricultural-center/agricultur
 
 export const centerAgricultural_es = {
   notExternal: true,
-  title: 'Ciencias Agropecuarias',
-  subtitle: 'Centro Académico',
+  titleHead: {
+    title: 'Ciencias Agropecuarias',
+    label: 'Centro Académico',
+  },
   path: 'universidad/centros/agropecuarias',
   text:
-    'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',
+    'Conoce mas acerca de este centro académico de la Universidad en los siguientes apartados de esta sección.',
   image: {
     path: 'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
     alt: 'Centro de Ciencias Agropecuarias de la UAA',

@@ -1,7 +1,9 @@
 export const agriculturalCenterPosta_es = {
-  title: 'Posta Zootécnica',
-  subtitle: 'Area de Ciencias Agropecuarias',
   notExternal: true,
+  titleHead: {
+    title: 'Posta Zootécnica',
+    label: 'Area de Ciencias Agropecuarias',
+  },
   image:
     'https://www.uaa.mx/portal/wp-content/uploads/2017/09/clip_image001.jpg',
   path: 'universidad/centros/agropecuarias/posta',

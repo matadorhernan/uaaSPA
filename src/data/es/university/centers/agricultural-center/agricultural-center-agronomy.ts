@@ -1,7 +1,9 @@
 export const agriculturalCenterAgronomy_es = {
-  title: 'Ciencias Agronómicas',
-  subtitle: 'Departamento de Ciencias Agropecuarias',
   notExternal: true,
+  titleHead: {
+    title: 'Ciencias Agronómicas',
+    label: 'Departamento de Ciencias Agropecuarias',
+  },
   image: 'https://www.uaa.mx/portal/wp-content/uploads/2018/11/Y6A4208.jpg',
   path: 'universidad/centros/agropecuarias/agronomicas',
   sections: [

@@ -11,8 +11,10 @@ import { socialCenter_es } from './centers/social-center';
 
 export const centers_es = {
   notExternal: true,
-  title: 'Nuestros Centros Académicos',
-  subtitle: 'Centros Académicos',
+  titleHead: {
+    title: 'Nuestros Centros Académicos',
+    label: 'Centros Académicos',
+  },
   path: 'universidad/centros',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',

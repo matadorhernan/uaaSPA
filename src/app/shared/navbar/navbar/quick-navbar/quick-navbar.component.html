@@ -1,5 +1,5 @@
 <ul class="navbar-quick">
-  <li class="quick-item" *ngFor="let item of quickLinks.pages">
-    <a [href]="item.path"> {{ item.title }}</a>
+  <li class="quick-item" *ngFor="let item of quickLinks?.pages">
+    <a [href]="item.path"> {{ item.titleHead.title }}</a>
   </li>
 </ul>

@@ -9,7 +9,10 @@ import { asociations_es } from './university/asociations';
 export const university_es = {
   collapsed: true,
   notExternal: true,
-  title: 'Universidad',
+  titleHead: {
+    title: 'Universidad',
+    label: 'Universidad',
+  },
   image: {
     path:
       'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Universidad-01.jpg',
@@ -22,25 +25,37 @@ export const university_es = {
     leadership_es,
     {
       notExternal: false,
-      title: 'Secretaría General',
+      titleHead: {
+        title: 'Secretaría General',
+        label: 'Secretaría General de la Universidad',
+      },
       path: 'https://www.uaa.mx/sg/',
     },
     administration_es,
     centers_es,
     development_es,
     {
-      title: 'Consejo Universitario',
       notExternal: false,
+      titleHead: {
+        title: 'Consejo Universitario',
+        label: 'Consejo Universitario',
+      },
       path: 'https://www.uaa.mx/consejo/',
     },
     {
-      title: 'Correo Universitario',
       notExternal: false,
+      titleHead: {
+        title: 'Correo Universitario',
+        label: 'Correo Universitario',
+      },
       path: 'https://www.uaa.mx/consejo/?page_id=638',
     },
     {
-      title: 'Legislación Universitaria',
       notExternal: false,
+      titleHead: {
+        title: 'Legislación Universitaria',
+        label: 'Legislación Universitaria',
+      },
       path: 'https://www.uaa.mx/institucion/LEGISLACION%20UNIVERSITARIA.pdf',
     },
     academicModel_es,

@@ -1,7 +1,9 @@
 export const centerBusiness_es = {
   notExternal: true,
-  title: 'Ciencias Empresariales',
-  subtitle: 'Centro Académico',
+  titleHead: {
+    title: 'Ciencias Empresariales',
+    label: 'Centro Académico',
+  },
   path: 'universidad/centros/empresariales',
   text:
     'Conoce mas acerca de los  Centros Académicos de la Universidad en los siguientes apartados de esta sección.',

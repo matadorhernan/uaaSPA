@@ -1,10 +1,10 @@
 <app-header
-  [label]="baseInfo.university.subtitle"
-  [title]="baseInfo.university.markup"
-  [image]="baseInfo.root.landing.image"
+  [label]="localData?.titleHead.label"
+  [title]="localData?.titleHead.title"
+  [image]="localData?.image"
 ></app-header>
 <app-templates-resolver
-  *ngFor="let section of baseInfo.root.landing.sections"
+  *ngFor="let section of localData.sections"
   [data]="section"
 ></app-templates-resolver>
 <div class="py-5"></div>

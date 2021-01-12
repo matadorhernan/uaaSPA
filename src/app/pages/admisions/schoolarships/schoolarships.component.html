@@ -1,1 +1,11 @@
-<p>schoolarships works!</p>
+<app-header
+  [image]="localData?.image.path"
+  [title]="localData?.titleHead.title"
+  [label]="localData?.titleHead.label"
+>
+</app-header>
+<app-templates-resolver
+  [data]="section"
+  *ngFor="let section of localData?.sections"
+></app-templates-resolver>
+<div class="py-5"></div>

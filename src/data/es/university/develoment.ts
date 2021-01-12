@@ -1,7 +1,9 @@
 export const development_es = {
   notExternal: true,
-  title: 'Plan de Desarrollo',
-  subtitle: 'Plan de Desarrollo de la Universidad',
+  titleHead: {
+    title: 'Plan de Desarrollo',
+    label: 'Plan de Desarrollo de la Universidad',
+  },
   path: 'universidad/desarrollo',
   image: {
     path:

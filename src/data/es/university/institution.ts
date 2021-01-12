@@ -8,8 +8,10 @@ import { institutionGov_es } from './institution/institution-gov';
 
 export const institution_es = {
   notExternal: true,
-  title: 'Institución',
-  subtitle: 'En esta seccion',
+  titleHead: {
+    title: 'Nuestra Institución',
+    label: 'Institución',
+  },
   path: 'universidad/institucion',
   text:
     'Conoce mas acerca de la Universidad en los siguientes apartados de esta seccion.',

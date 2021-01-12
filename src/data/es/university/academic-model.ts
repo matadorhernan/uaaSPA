@@ -1,7 +1,9 @@
 export const academicModel_es = {
   notExternal: true,
-  title: 'Modelo Educativo Institucional',
-  subtitle: 'Modelo Educativo Institucional de la Universidad',
+  titleHead: {
+    title: 'Modelo Educativo Institucional',
+    label: 'Modelo Educativo Institucional de la Universidad',
+  },
   path: 'universidad/modelo',
   image: {
     path:
