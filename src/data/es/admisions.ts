@@ -1,14 +1,12 @@
 import { process_es } from './admisions/process';
-import { aplicant_es } from './admisions/aplicant';
 import { accrediting_es } from './admisions/accrediting';
 import { results_es } from './admisions/results';
-import { schoolarships_es } from './admisions/schoolarships';
 
 export const admisions_es = {
   collapsed: true,
   titleHead: {
     title: 'Admisiones',
-    label: 'Admisiones',
+    label: 'Menu',
   },
   image: {
     path:
@@ -19,10 +17,8 @@ export const admisions_es = {
   },
   pages: [
     process_es,
-    aplicant_es,
     accrediting_es,
     results_es,
-    schoolarships_es,
     {
       notExternal: true,
       titleHead: {
@@ -30,6 +26,64 @@ export const admisions_es = {
         label: 'Admisiones',
       },
       path: 'oferta/licenciaturas',
+    },
+    {
+      titleHead: {
+        title: 'Bachillerato',
+        label: 'Oferta Educativa',
+      },
+      path:
+        'https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/centro-de-educacion-media/',
+    },
+    {
+      titleHead: {
+        title: 'Posgrados',
+        label: 'Oferta Educativa',
+      },
+      path: 'https://www.uaa.mx/portal/oferta-educativa/posgrados/',
+    },
+    {
+      titleHead: {
+        title: 'Diplomados',
+        label: 'Oferta Educativa',
+      },
+      path: 'http://cursos.uaa.mx/index.php?m=d',
+    },
+    {
+      titleHead: {
+        title: 'Cursos de Extensión Académica',
+        label: 'Oferta Educativa',
+      },
+      path: 'http://cursos.uaa.mx/index.php?m=l',
+    },
+    {
+      titleHead: {
+        title: 'Cursos en Línea',
+        label: 'Oferta Educativa',
+      },
+      path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
+    },
+    {
+      titleHead: {
+        title: 'Cursos de Idiomas',
+        label: 'Oferta Educativa',
+      },
+      path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
+    },
+    {
+      titleHead: {
+        title: 'Extensión, Educación Continua y a Distancia',
+        label: 'Oferta Educativa',
+      },
+      path:
+        'https://www.uaa.mx/portal/oferta-educativa/extension-educacion-continua-y-a-distancia/',
+    },
+    {
+      titleHead: {
+        title: 'Descubre tu carrera',
+        label: 'Oferta Educativa',
+      },
+      path: 'http://modeloeducativo.uaa.mx/uaa-14/',
     },
   ],
 };

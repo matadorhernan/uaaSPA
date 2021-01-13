@@ -73,7 +73,48 @@ export const juniorHighPresentation_es = {
         title: 'Servicios del Centro',
         label: 'Servicios',
       },
-      pages: [],
+      pages: [
+        {
+          notExternal: true,
+          titleHead: {
+            title: 'Becas y Apoyos',
+            label: 'Servicio de Apoyo de la Institución',
+          },
+          path: 'admisiones/becas',
+        },
+        {
+          notExternal: true,
+          titleHead: {
+            title: 'Proceso de Admisión',
+            label: 'Servicio Control Escolar',
+          },
+          path: 'admisiones/proceso',
+        },
+        {
+          notExternal: false,
+          titleHead: {
+            title: 'Centro de Información Bibliográfica',
+            label: 'Centro de Información',
+          },
+          path: 'http://biblioteca.uaa.mx/index.php/biblioteca-digital',
+        },
+        {
+          notExternal: false,
+          titleHead: {
+            title: 'Información de Escuelas Incorporadas',
+            label: 'Escuelas Incorporadas',
+          },
+          path: 'https://dgdp.uaa.mx/escuelas/',
+        },
+        {
+          notExternal: false,
+          titleHead: {
+            title: 'Orientación Educativa',
+            label: 'Asesorías',
+          },
+          path: 'https://dgdp.uaa.mx/escuelas/',
+        },
+      ],
     },
   ],
 };

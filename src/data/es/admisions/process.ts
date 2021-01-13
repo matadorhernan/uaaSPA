@@ -17,28 +17,20 @@ export const process_es = {
     {
       notExternal: false,
       titleHead: {
-        title: 'Resultados del proceso de admisión',
-        label: 'Aspirantes Nacionales de Enero 2021',
-      },
-      path:
-        'http://posgrados.dgip.uaa.mx/posgrado/index.php?option=com_content&view=article&id=559&Itemid=670',
-    },
-    {
-      notExternal: false,
-      titleHead: {
-        title: 'Pre-registro Inscripción',
-        label: 'Aceptados a Posgrados',
-      },
-      path: 'https://esiima.uaa.mx/exaadm/login.jsp',
-    },
-    {
-      notExternal: false,
-      titleHead: {
         title: 'Admisión a Bachillerato',
         label: 'Proceso de Admisión',
       },
       path:
         'https://www.uaa.mx/portal/wp-content/uploads/2020/06/CONVOCATORIA-ADMISI%C3%93N-BACHILLERATO-2020.pdf',
+    },
+    {
+      notExternal: false,
+      titleHead: {
+        title: 'Admisión a Bachillerato Internacional',
+        label: 'Proceso de Admisión',
+      },
+      path:
+        'https://www.uaa.mx/portal/wp-content/uploads/2020/07/INFORMACI%C3%93N-GENERAL-ADMISI%C3%93N-BACH.-INTERNACIONAL-2020-2.pdf',
     },
     {
       notExternal: false,
@@ -57,11 +49,18 @@ export const process_es = {
     {
       notExternal: false,
       titleHead: {
-        title: 'Admisión a Bachillerato Internacional',
-        label: 'Proceso de Admisión',
+        title: 'Pre-registro Inscripción',
+        label: 'Aceptados a Posgrados',
       },
-      path:
-        'https://www.uaa.mx/portal/wp-content/uploads/2020/07/INFORMACI%C3%93N-GENERAL-ADMISI%C3%93N-BACH.-INTERNACIONAL-2020-2.pdf',
+      path: 'https://esiima.uaa.mx/exaadm/login.jsp',
+    },
+    {
+      notExternal: false,
+      titleHead: {
+        title: 'Carga de Documentos',
+        label: 'Carga de documentos (alumnos de nuevo ingreso)',
+      },
+      path: 'https://esiima.uaa.mx/exaadm/login.jsp',
     },
   ],
 };

@@ -35,3 +35,4 @@ export class NavbarComponent implements OnInit {
     this.isSideNavEvent.unsubscribe();
   }
 }
+7;

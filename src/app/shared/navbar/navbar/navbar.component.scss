@@ -55,6 +55,7 @@
     grid-template-rows: 75px;
 
     .navbar-drops {
+      padding: 0 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -128,7 +129,7 @@
             z-index: 1;
             position: absolute;
             width: 100%;
-            min-height: 530px;
+            min-height: 550px;
             margin: 0;
             left: 0;
             top: 75px;
@@ -194,6 +195,10 @@
       }
     }
   }
+}
+
+::ng-deep app-image .image img {
+  height: 350px;
 }
 
 @media (min-width: 1200px) {

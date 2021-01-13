@@ -11,7 +11,7 @@ export const university_es = {
   notExternal: true,
   titleHead: {
     title: 'Universidad',
-    label: 'Universidad',
+    label: 'Menu',
   },
   image: {
     path:

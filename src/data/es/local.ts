@@ -46,7 +46,7 @@ export const local_es = {
       collapsed: true,
       titleHead: {
         title: 'Menu Rapido',
-        label: 'Menu Rapido',
+        label: 'Menu',
       },
       pages: [
         {
@@ -100,6 +100,13 @@ export const local_es = {
         },
         {
           titleHead: {
+            title: 'CAADI',
+            label: 'Menu Rapido',
+          },
+          path: 'https://caadi.uaa.mx/',
+        },
+        {
+          titleHead: {
             title: 'Aula Virtual',
             label: 'Menu Rapido',
           },
@@ -120,89 +127,8 @@ export const local_es = {
       {
         collapsed: true,
         titleHead: {
-          title: 'Oferta Educativa',
-          label: 'Oferta Educativa',
-        },
-        image: {
-          path:
-            'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Oferta-Educativa-01.png',
-          alt: 'estudiantes',
-          caption:
-            'Complementa tu formación con nuestras opciones de pregrado y posgrado, cursos de extensión académica, diplomados y cursos de idiomas que tenemos disponibles para ti.',
-        },
-        pages: [
-          {
-            titleHead: {
-              title: 'Licenciaturas',
-              label: 'Oferta Educativa',
-            },
-            path: 'https://www.uaa.mx/portal/oferta-educativa/licenciaturas/',
-          },
-          {
-            titleHead: {
-              title: 'Bachillerato',
-              label: 'Oferta Educativa',
-            },
-            path:
-              'https://www.uaa.mx/portal/nuestra-universidad/centros-academicos-2/centro-de-educacion-media/',
-          },
-          {
-            titleHead: {
-              title: 'Posgrados',
-              label: 'Oferta Educativa',
-            },
-            path: 'https://www.uaa.mx/portal/oferta-educativa/posgrados/',
-          },
-          {
-            titleHead: {
-              title: 'Diplomados',
-              label: 'Oferta Educativa',
-            },
-            path: 'http://cursos.uaa.mx/index.php?m=d',
-          },
-          {
-            titleHead: {
-              title: 'Cursos de Extensión Académica',
-              label: 'Oferta Educativa',
-            },
-            path: 'http://cursos.uaa.mx/index.php?m=l',
-          },
-          {
-            titleHead: {
-              title: 'Cursos en Línea',
-              label: 'Oferta Educativa',
-            },
-            path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
-          },
-          {
-            titleHead: {
-              title: 'Cursos de Idiomas',
-              label: 'Oferta Educativa',
-            },
-            path: 'https://www.uaa.mx/direcciones/dgdv/rytv/',
-          },
-          {
-            titleHead: {
-              title: 'Extensión, Educación Continua y a Distancia',
-              label: 'Oferta Educativa',
-            },
-            path:
-              'https://www.uaa.mx/portal/oferta-educativa/extension-educacion-continua-y-a-distancia/',
-          },
-          {
-            titleHead: {
-              title: 'Descubre tu carrera',
-              label: 'Oferta Educativa',
-            },
-            path: 'http://modeloeducativo.uaa.mx/uaa-14/',
-          },
-        ],
-      },
-      {
-        collapsed: true,
-        titleHead: {
-          title: 'Internacional',
-          label: 'Internacional',
+          title: 'Intercambio',
+          label: 'Menu',
         },
         image: {
           path:
@@ -214,54 +140,213 @@ export const local_es = {
         pages: [
           {
             titleHead: {
-              title: 'Convocatoria',
+              title: 'Intercambios para Pregrado',
               label: 'Internacional',
             },
             path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
           },
           {
             titleHead: {
-              title: 'Nuevo ingreso',
+              title: 'Intercambios para Posgrado',
               label: 'Internacional',
             },
             path: 'https://www.uaa.mx/portal/aspirantes/inscripcion/',
           },
           {
             titleHead: {
-              title: 'Revalidación',
+              title: 'Intercambios para Profesores',
               label: 'Internacional',
             },
             path: 'https://www.uaa.mx/portal/aspirantes/revalidacion/',
           },
           {
             titleHead: {
-              title: 'Resultados de admisión',
+              title: 'Convenios y Asociaciones de Movilidad',
               label: 'Internacional',
             },
             path:
               'https://www.uaa.mx/portal/aspirantes/resultados-de-admision/',
           },
+        ],
+      },
+      {
+        collapsed: true,
+        titleHead: {
+          title: 'Becas y Apoyo',
+          label: 'Menu',
+        },
+        image: {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2020/02/KM2A7944-Movilidad.jpg',
+          alt: 'estudiantes',
+          caption:
+            'Infórmate acerca de todos los beneficios que te ofrece la UAA, como las instalaciones y servicios, oferta educativa, deportes y alternativas de apoyo.',
+        },
+        pages: [
           {
             titleHead: {
-              title: 'Apoyos y Becas',
-              label: 'Internacional',
-            },
-            path: 'https://www.uaa.mx/portal/aspirantes/apoyos-y-becas/',
-          },
-          {
-            titleHead: {
-              title: 'Licenciaturas',
-              label: 'Internacional',
-            },
-            path: 'https://www.uaa.mx/portal/oferta-educativa/licenciaturas/',
-          },
-          {
-            titleHead: {
-              title: 'Orientación Educativa',
-              label: 'Internacional',
+              title: 'Programa para emprendedores',
+              label: 'Becas y Apoyo',
             },
             path:
-              'https://www.uaa.mx/portal/aspirantes/departamento-de-orientacion-educativa/',
+              'https://www.uaa.mx/portal/alumnos/programa-para-emprendedores/',
+          },
+          {
+            path: 'https://investigacion.uaa.mx/proyecto',
+            titleHead: {
+              title: 'Becas de la Universidad',
+              label: 'Becas y Apoyo',
+            },
+          },
+          {
+            path: 'https://investigacion.uaa.mx/proyecto',
+            titleHead: {
+              title: 'Becas de Investigación',
+              label: 'Becas y Apoyo',
+            },
+          },
+          {
+            titleHead: {
+              title: 'Becas de Movilidad',
+              label: 'Becas y Apoyo',
+            },
+            path:
+              'https://www.uaa.mx/portal/alumnos/programa-para-emprendedores/',
+          },
+          {
+            titleHead: {
+              title: 'Bolsa de trabajo',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/alumnos/bolsa-de-trabajo/',
+          },
+          {
+            titleHead: {
+              title: 'Servicio Social',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Prácticas Profesionales',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Formación Humanista',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Tutorías',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Servicios de Apoyo para Estudiantes',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Seguridad Social para Alumnos',
+              label: 'Becas y Apoyo',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+        ],
+      },
+      {
+        collapsed: true,
+        titleHead: {
+          title: 'Alumnado',
+          label: 'Menu',
+        },
+        image: {
+          path:
+            'https://www.uaa.mx/portal/wp-content/uploads/2020/02/IMG_1203-Alumnos.jpg',
+          alt: 'estudiantes',
+          caption:
+            'Infórmate acerca de todos los beneficios que te ofrece la UAA, como las instalaciones y servicios, oferta educativa, deportes y alternativas de apoyo.',
+        },
+        pages: [
+          {
+            titleHead: {
+              title: 'Sistema de Calificaciones',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Oferta de Materias Comunes',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Orientación Asuntos Escolares',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Constancias y Credenciales',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Trámites a Distancia',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Exámenes Extraordinarios y Título de Suficiencia',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Duplicado Título Profesional',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Egreso',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Reglamentación académica',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
+          },
+          {
+            titleHead: {
+              title: 'Reinscripción',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
           },
         ],
       },
@@ -269,7 +354,7 @@ export const local_es = {
         collapsed: true,
         titleHead: {
           title: 'Investigación',
-          label: 'Investigación',
+          label: 'Menu',
         },
         image: {
           path:
@@ -285,6 +370,13 @@ export const local_es = {
               title: 'Sistemas de Proyectos de Investigacion',
               label: 'Investigación',
             },
+          },
+          {
+            titleHead: {
+              title: 'Divulgación de la Ciencia',
+              label: 'Alumnado',
+            },
+            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
           },
           {
             path:
@@ -324,7 +416,7 @@ export const local_es = {
         collapsed: true,
         titleHead: {
           title: 'Egresados',
-          label: 'Egresados',
+          label: 'Menu',
         },
         image: {
           path:
@@ -343,21 +435,6 @@ export const local_es = {
           },
           {
             titleHead: {
-              title: 'Bolsa de trabajo',
-              label: 'Egresados',
-            },
-            path: 'https://www.uaa.mx/portal/alumnos/bolsa-de-trabajo/',
-          },
-          {
-            titleHead: {
-              title: 'Programa para emprendedores',
-              label: 'Egresados',
-            },
-            path:
-              'https://www.uaa.mx/portal/alumnos/programa-para-emprendedores/',
-          },
-          {
-            titleHead: {
               title: 'Trámites a Distancia',
               label: 'Egresados',
             },
@@ -371,73 +448,6 @@ export const local_es = {
             },
             path:
               'https://www.uaa.mx/portal/wp-content/uploads/2019/04/DUPLICADO-DE-T%C3%8DTULO-PROFESIONAL.pdf',
-          },
-        ],
-      },
-      {
-        collapsed: true,
-        titleHead: {
-          title: 'Comunicación',
-          label: 'Comunicación',
-        },
-        image: {
-          path:
-            'https://www.uaa.mx/portal/wp-content/uploads/2018/10/Comunicacion-01.png',
-          alt: 'camara',
-          caption:
-            'Entérate de las noticias más recientes e importantes de nuestra universidad.',
-        },
-        pages: [
-          {
-            path: 'https://www.uaa.mx/portal/aspirantes/proceso-de-admision/',
-            titleHead: {
-              title: 'Convocatoria',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path: 'https://www.uaa.mx/portal/aspirantes/inscripcion/',
-            titleHead: {
-              title: 'Nuevo ingreso',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path: 'https://www.uaa.mx/portal/aspirantes/revalidacion/',
-            titleHead: {
-              title: 'Revalidación',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path:
-              'https://www.uaa.mx/portal/aspirantes/resultados-de-admision/',
-            titleHead: {
-              title: 'Resultados de admisión',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path: 'https://www.uaa.mx/portal/aspirantes/apoyos-y-becas/',
-            titleHead: {
-              title: 'Apoyos y Becas',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path: 'https://www.uaa.mx/portal/oferta-educativa/licenciaturas/',
-            titleHead: {
-              title: 'Licenciaturas',
-              label: 'Comunicación',
-            },
-          },
-          {
-            path:
-              'https://www.uaa.mx/portal/aspirantes/departamento-de-orientacion-educativa/',
-            titleHead: {
-              title: 'Orientación Educativa',
-              label: 'Comunicación',
-            },
           },
         ],
       },

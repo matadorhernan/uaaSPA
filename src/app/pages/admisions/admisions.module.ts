@@ -4,25 +4,15 @@ import { TemplatesModule } from '../../templates/templates.module';
 import { AdmisionsPageRoutingModule } from './admisions-routing.module';
 
 import { ProcessComponent } from './process/process.component';
-import { AplicantComponent } from './aplicant/aplicant.component';
 import { AccreditingComponent } from './accrediting/accrediting.component';
 import { ResultsComponent } from './results/results.component';
-import { SchoolarshipsComponent } from './schoolarships/schoolarships.component';
 
 @NgModule({
-  declarations: [
-    ProcessComponent,
-    AplicantComponent,
-    AccreditingComponent,
-    ResultsComponent,
-    SchoolarshipsComponent,
-  ],
+  declarations: [ProcessComponent, AccreditingComponent, ResultsComponent],
   exports: [
     ProcessComponent,
-    AplicantComponent,
     AccreditingComponent,
     ResultsComponent,
-    SchoolarshipsComponent,
     AdmisionsPageRoutingModule,
   ],
   imports: [CommonModule, TemplatesModule, AdmisionsPageRoutingModule],

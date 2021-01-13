@@ -12,7 +12,7 @@ export class ResultsComponent implements OnInit {
   public localData: any;
 
   constructor() {
-    this.localData = _.cloneDeep(local_es.root.pages[1].pages[3]);
+    this.localData = _.cloneDeep(local_es.root.pages[1].pages[2]);
   }
   ngOnInit(): void {}
 }
